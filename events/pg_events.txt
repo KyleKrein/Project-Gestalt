@@ -557,3 +557,16 @@ country_event = {
 		}
 	}
 }
+
+#Gene-modified Psionics
+country_event = {
+	id = pg.5
+	title = "pg.5.name"
+	desc = "pg.5.desc"
+	picture = GFX_evt_psionics
+	show_sound = event_the_great_awakening
+
+	is_triggered_only = yes
+
+	
+}

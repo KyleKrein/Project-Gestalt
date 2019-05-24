@@ -198,3 +198,36 @@ ap_perfect_creatures = {
 		factor = 5
 	}
 }
+
+#Gene-modified Psionics
+ap_pg_new_era = {
+	potential = {
+		host_has_dlc = "Utopia"
+		NOR = {
+			has_ascension_perk = ap_mind_over_matter
+			has_ascension_perk = ap_the_flesh_is_weak
+		}
+	}
+	possible = {
+		AND = {
+		has_ascension_perk = ap_perfect_creatures
+		OR = {
+			any_owned_pop = {
+				OR = {
+				has_trait = trait_latent_psionic
+				has_trait = trait_psionic
+				}
+			}
+			has_valid_civic = civic_vb_psi_touched_by_the_shroud
+			}
+		}
+	}
+	on_enabled = {
+		country_event = {
+			id = pg.5
+		}
+	}
+	ai_weight = {
+		factor = 5
+	}
+}
