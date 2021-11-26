@@ -6,6 +6,7 @@ trait_gestalt = {
 	randomized = no
 	modification = no
 	immortal_leaders = yes
+	potential_crossbreeding_chance = 0
 
 	allowed_archetypes = { ENERGY }
 	
@@ -31,6 +32,7 @@ trait_corrupted = {
 	modification = no
 	immortal_leaders = yes
 	allowed_archetypes = { ENERGY }
+	potential_crossbreeding_chance = 0
 	
 	modifier = {
 		planet_jobs_engineering_research_produces_mult = 0.20
@@ -51,7 +53,8 @@ trait_vb_psi_soul_eater = {
 	randomized = no
 	modification = no
 	icon = "gfx/interface/icons/traits/vb_psi_soul_eater.dds"
-	allowed_archetypes = { BIOLOGICAL ENERGY }
+	allowed_archetypes = { BIOLOGICAL ENERGY LITHOID }
+	potential_crossbreeding_chance = 0
 }
 
 trait_singlemind = {
@@ -62,6 +65,7 @@ trait_singlemind = {
 	icon = "gfx/interface/icons/governments/civics/civic_united_machines.dds"
 	allowed_archetypes = { ROBOT }
 	forced_happiness = yes
+	potential_crossbreeding_chance = 0
 
 	modifier = {
 		army_damage_mult = 0.20
@@ -70,10 +74,12 @@ trait_singlemind = {
 }
 
 trait_perfect_creature = {
-	cost = -5
+	cost = 0
 	initial = no
 	randomized = no
-	modification = no
+	modification = yes
+	prerequisites = { tech_pg_perfect }
+	potential_crossbreeding_chance = 0
 	icon = "gfx/interface/icons/traits/leader_traits/leader_trait_psionic_chosen_one.dds"
 	allowed_archetypes = {
 		BIOLOGICAL
@@ -87,4 +93,70 @@ trait_perfect_creature = {
 		pop_environment_tolerance = 2.00
 	}
 	immortal_leaders = yes
+}
+
+trait_brainwashed_psi = {
+	cost = 0
+	opposites = { "trait_nerve_stapled" "trait_brainwashed_se" }
+	prerequisites = { tech_psionic_theory }
+	initial = no
+	randomized = no
+	modification = yes
+	forced_happiness = yes
+	potential_crossbreeding_chance = 0
+	allowed_archetypes = {
+		BIOLOGICAL
+		ENERGY
+	}
+	icon = "gfx/interface/icons/traits/brainwashed_trait.dds"
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.1
+		planet_jobs_energy_produces_mult = 0.1
+		planet_jobs_minerals_produces_mult = 0.1
+		planet_jobs_physics_research_produces_mult = -0.75
+		planet_jobs_engineering_research_produces_mult = -0.75
+		planet_jobs_society_research_produces_mult = -0.75
+	}
+}
+
+trait_brainwashed_se = {
+	cost = 0
+	opposites = { "trait_nerve_stapled" "trait_brainwashed_psi" }
+	prerequisites = { tech_brainwash_soul_eater }
+	initial = no
+	randomized = no
+	modification = yes
+	forced_happiness = yes
+	potential_crossbreeding_chance = 0
+	allowed_archetypes = {
+		BIOLOGICAL
+		ENERGY
+	}
+	icon = "gfx/interface/icons/traits/brainwashed_trait.dds"
+	modifier = {
+		planet_jobs_unity_produces_mult = 0.1
+		planet_jobs_energy_produces_mult = 0.1
+		planet_jobs_minerals_produces_mult = 0.1
+		planet_jobs_physics_research_produces_mult = -0.75
+		planet_jobs_engineering_research_produces_mult = -0.75
+		planet_jobs_society_research_produces_mult = -0.75
+		pop_growth_speed = 0.15
+	}
+}
+
+trait_pg_soul_eaten = {
+	cost = 0
+	initial = no
+	randomized = no
+	modification = no
+	forced_happiness = no
+	potential_crossbreeding_chance = 0
+	allowed_archetypes = {
+		BIOLOGICAL
+		ENERGY
+	}
+	icon = "gfx/interface/icons/traits/trait_pg_soul_eaten.dds"
+	modifier = {
+		pop_growth_speed = -1
+	}
 }

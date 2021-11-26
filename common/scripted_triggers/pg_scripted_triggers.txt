@@ -1,0 +1,9 @@
+is_millionaire = {
+	has_origin = origin_millionaire
+}
+
+is_energy = {
+	species = {
+		is_archetype = ENERGY
+	}
+}

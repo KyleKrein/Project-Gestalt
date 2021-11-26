@@ -1,0 +1,77 @@
+bleak_vortex = {
+	show_in_contacts_list = yes
+	minimalist_contacts_list_profile = yes
+	share_communications = no
+	default_ships = no
+	government = no
+	ai = {
+		enabled = no
+	}
+	faction = {
+		hostile = no
+		needs_border_access = no
+		generate_borders = no
+		needs_colony = no
+		auto_delete = no
+	}
+	custom_diplomacy = yes
+	modules = {
+		basic_technology_module = {}
+		exclusive_diplomacy_module = {
+			contact_rule = script_only
+		}
+	}
+}
+
+pg_last_hope = {
+	playable = yes
+	needs_survey = no
+	diplomatic_wars = yes
+	ship_disengagement = yes
+	army_disengagement = yes
+	relations = yes
+	observable = yes
+	show_in_contacts_list = yes
+	piracy_risk	= no
+	has_pulse_events = yes
+	ai = {
+		enabled = yes
+		colonizer = yes
+		internal_policies = yes
+		construction = yes
+		modules = {
+			military_minister_module
+			foreign_minister_module
+			interior_minister_module
+		}
+		ship_data = {
+			constructor = {
+				min = 1
+				max = 3
+			}
+			science	= {
+				min = 2
+				max = 3
+			}
+			colonizer = {
+				min = 1
+				max = 1
+			}
+		}
+	}
+	faction = {
+		needs_colony = no
+		hostile_when_attacked = yes
+		needs_border_access = no
+	}
+	modules = {
+		standard_event_module = {}
+		standard_economy_module = {}
+		standard_leader_module = {}
+		standard_diplomacy_module = {}
+		standard_technology_module = {}
+		standard_pop_factions_module = {}
+		standard_expansion_module = {}
+		standard_species_rights_module = {}
+	}
+}

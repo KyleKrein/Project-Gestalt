@@ -1,0 +1,33 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_origin_isolated"
+		texturefile = "gfx/event_pictures/origins/origin_isolated.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_cluster"
+		texturefile = "gfx/event_pictures/origins/origin_cluster.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_soul_eaters"
+		texturefile = "gfx/event_pictures/origins/origin_soul_eaters.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_touched"
+		texturefile = "gfx/event_pictures/origins/origin_touched_by_the_shroud.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_millionaire"
+		texturefile = "gfx/event_pictures/origins/origin_millionaire.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_origin_pg_moon_start"
+		texturefile = "gfx/event_pictures/origins/origin_pg_moon_start.dds"
+		alwaystransparent = yes
+		}
+}

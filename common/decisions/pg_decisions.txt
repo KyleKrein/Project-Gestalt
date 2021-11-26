@@ -13,8 +13,7 @@ decision_shrouded_world = {
 	
 	potential = {
 		NOT = { has_modifier = shrouded_world }
-		owner = { 
-            is_regular_empire = yes 
+		owner = {  
             has_ascension_perk = ap_shrouded_worlds
 		}
 		habitable_structure = no
@@ -32,5 +31,93 @@ decision_shrouded_world = {
 	
 	ai_weight = {
 		weight = 10
+	}
+}
+
+decision_last_hope = {
+	owned_planets_only = yes
+	sound = event_administrative_work
+	icon = decision_landing_ship
+	resources = {
+		category = decisions
+		cost = {
+			minerals = 500
+			consumer_goods = 400
+			alloys = 50
+			energy = 250
+		}
+	}
+	prerequisites = {
+		tech_pg_the_ark
+	}
+	allow = {
+		exists = owner
+		owner = {
+			is_ai = no
+			num_owned_planets = 1
+		}
+	}
+	effect = {
+		hidden_effect = {
+			owner = {
+				if = {
+					limit = { is_country_type = default }
+					set_country_flag = pg_country_type_default
+				}
+				if = {
+					limit = { is_country_type = ascended_empire }
+					set_country_flag = pg_country_type_ascended
+				}
+				if = {
+					limit = { is_country_type = lost_empire }
+					set_country_flag = pg_country_type_lost
+				}
+				if = {
+					limit = {
+						has_modifier = pg_the_new_hope
+					}
+					remove_modifier = pg_the_new_hope
+				}
+				add_modifier = {
+					modifier = pg_the_ark
+				}
+				set_country_type = pg_last_hope
+				set_country_flag = ark_habitat_allow
+				create_fleet = {
+					effect = {
+						set_owner = root.owner
+						create_ship = {
+							name = "The Ark"
+							random_existing_design = colonizer
+						}
+						set_location = root
+						save_event_target_as = the_ark_ship
+					}
+				}
+			}
+			
+			every_owned_pop = {
+				owner = {
+#					set_variable = {
+#						which = pg_the_ark_pops
+#						value = 0
+#					}
+					change_variable = {
+						which = pg_the_ark_pops
+						value = 1
+					}
+					add_resource = {
+						energy = 50
+						minerals = 50
+					}
+				}
+				kill_pop = yes
+			}
+		}
+		
+		pg_destroy_buildings_and_colony = yes
+	}
+	ai_weight = {
+		weight = 0
 	}
 }

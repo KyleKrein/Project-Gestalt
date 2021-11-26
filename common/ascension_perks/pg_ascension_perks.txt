@@ -24,7 +24,7 @@ ap_project_gestalt = {
 		}
 #		custom_tooltip = {
 #			fail_text = "vb_psi_not_soul_eaters"
-#			NOT = { has_civic = civic_vb_psi_soul_eater }
+#			NOT = { has_origin = origin_vb_psi_soul_eater }
 #		}
 	}
 	potential = {
@@ -38,7 +38,7 @@ ap_project_gestalt = {
 	}
 	
 	ai_weight = {
-		factor = 1
+		factor = 30
 	}
 }
 
@@ -72,7 +72,7 @@ ap_ascension_pc = {
 	on_enabled = {
 
 		custom_tooltip = "pg_tooltip1"
-
+		add_research_option = tech_brainwash_soul_eater
 		hidden_effect = {
 			country_event = { id = pg.3 }
 		}
@@ -91,19 +91,21 @@ ap_ascension_pc = {
 	potential = {
 		AND = { 
 			host_has_dlc = "Utopia"
-            has_civic = civic_vb_psi_soul_eater
+            has_origin = origin_vb_psi_soul_eater
             }
 		NOR = {
 			has_ascension_perk = ap_project_gestalt
 			has_authority = "auth_machine_intelligence"
 			has_ascension_perk = ap_mind_over_matter
+			has_ascension_perk = ap_ascension_pc
+			has_ascension_perk = ap_engineered_evolution
 		}
 		is_mechanical_empire = no
 		is_cyborg_empire = no		
 	}
 	
 	ai_weight = {
-		factor = 1
+		factor = 20
 	}
 }
 
@@ -124,7 +126,7 @@ ap_united_machines = {
 	possible = {
                 NOR = { 
 				    has_ascension_perk = ap_mind_over_matter 
-				has_civic = civic_vb_psi_soul_eater 
+				has_origin = origin_vb_psi_soul_eater 
 				}
 		        custom_tooltip = {
 			    fail_text = "requires_tech_um"
@@ -138,12 +140,12 @@ ap_united_machines = {
                 }
 	        }
     modifier = {
-		country_base_unity_produces_mult = 0.15
+		country_unity_produces_mult = 0.15
 		country_base_influence_produces_add = 1
 		country_admin_cap_add = 100
 	}
 	ai_weight = {
-		factor = 5
+		factor = 15
 	}
 }
 
@@ -185,9 +187,10 @@ ap_perfect_creatures = {
 		}
 	}
 	on_enabled = {
+		custom_tooltip = "ap_perfect_creatures_effect"
 		hidden_effect = {
 			country_event = {
-				id = pg.8
+				id = pg.9
 			}
 		}
 	}
@@ -195,39 +198,39 @@ ap_perfect_creatures = {
 		has_ascension_perk = ap_evolutionary_mastery
 	}
 	ai_weight = {
-		factor = 5
+		factor = 10
 	}
 }
 
 #Gene-modified Psionics
-ap_pg_new_era = {
-	potential = {
-		host_has_dlc = "Utopia"
-		NOR = {
-			has_ascension_perk = ap_mind_over_matter
-			has_ascension_perk = ap_the_flesh_is_weak
-		}
-	}
-	possible = {
-		AND = {
-		has_ascension_perk = ap_perfect_creatures
-		OR = {
-			any_owned_pop = {
-				OR = {
-				has_trait = trait_latent_psionic
-				has_trait = trait_psionic
-				}
-			}
-			has_valid_civic = civic_vb_psi_touched_by_the_shroud
-			}
-		}
-	}
-	on_enabled = {
-		country_event = {
-			id = pg.5
-		}
-	}
-	ai_weight = {
-		factor = 5
-	}
-}
+#ap_pg_new_era = {
+#	potential = {
+#		host_has_dlc = "Utopia"
+#		NOR = {
+#			has_ascension_perk = ap_mind_over_matter
+#			has_ascension_perk = ap_the_flesh_is_weak
+#		}
+#	}
+#	possible = {
+#		AND = {
+#		has_ascension_perk = ap_perfect_creatures
+#		OR = {
+#			any_owned_pop = {
+#				OR = {
+#				has_trait = trait_latent_psionic
+#				has_trait = trait_psionic
+#				}
+#			}
+#			has_origin = origin_vb_psi_touched_by_the_shroud
+#			}
+#		}
+#	}
+#	on_enabled = {
+#		country_event = {
+#			id = pg.5
+#		}
+#	}
+#	ai_weight = {
+#		factor = 5
+#	}
+#}

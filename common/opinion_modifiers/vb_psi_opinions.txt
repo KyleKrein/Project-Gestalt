@@ -1,7 +1,6 @@
 opinion_vb_psi_souleaters_on_others = {	
 	trigger = {
-		is_country_type = default
-		has_civic = civic_vb_psi_soul_eater
+		has_origin = origin_vb_psi_soul_eater
 		any_owned_pop = { 
                              OR = {  has_trait = trait_vb_psi_soul_eater
                                       has_trait = trait_corrupted
@@ -9,7 +8,7 @@ opinion_vb_psi_souleaters_on_others = {
 		FROM = {
 			NOR = {
 				has_authority = auth_machine_intelligence
-				has_civic = civic_vb_psi_soul_eater
+				has_origin = origin_vb_psi_soul_eater
 				has_country_flag = synthetic_empire
 			    }
 		    }
@@ -42,12 +41,12 @@ opinion_vb_psi_others_on_souleaters = {
 	trigger = {
 		NOR = {
 			has_authority = auth_machine_intelligence
-			has_civic = civic_vb_psi_soul_eater
+			has_origin = origin_vb_psi_soul_eater
 			has_country_flag = synthetic_empire
 		}
 		FROM = {
 			is_country_type = default
-			has_civic = civic_vb_psi_soul_eater
+			has_origin = origin_vb_psi_soul_eater
 		        any_owned_pop = { 
                                      OR = {  has_trait = trait_vb_psi_soul_eater
                                              has_trait = trait_corrupted
@@ -101,16 +100,14 @@ opinion_vb_psi_ate_our_species = {
 
 opinion_vb_psi_souleater_on_souleater = {
 	trigger = {
-		is_country_type = default
-		has_civic = civic_vb_psi_soul_eater
+		has_origin = origin_vb_psi_soul_eater
 		any_owned_pop = { 
                               OR = {  has_trait = trait_vb_psi_soul_eater
                                       has_trait = trait_corrupted
                                 }
                         }
 		FROM = {
-			is_country_type = default
-			has_civic = civic_vb_psi_soul_eater
+			has_origin = origin_vb_psi_soul_eater
 					any_owned_pop = { 
                                                       OR = {  has_trait = trait_vb_psi_soul_eater
                                                               has_trait = trait_corrupted

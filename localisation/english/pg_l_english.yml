@@ -1,7 +1,7 @@
 ﻿l_english:
  
- gestalt_army:0 "Energetic Army"
- gestalt_army_desc:0 "An army of energetic creatures that can invade enemy worlds"
+ gestalt_army:0 "Ascendant Army"
+ gestalt_army_desc:0 "An army of energy-based entities that are going to BURN every single enemy planet."
  ap_project_gestalt:0 "Project Gestalt"
  ap_project_gestalt_desc:0 "After gaining psionic abilities, we realized that the physical body is not the limit. We must leave our bodies and become something better."
  pg_tooltip:0 "After the finishing of a special project, we will become immortal"
@@ -79,12 +79,12 @@
  VB_PSI_HIGH_SHAMAN:0 "High Shaman"
  VB_PSI_HIGH_SHAMANESS:0 "High Shamaness"
  
- civic_vb_psi_soul_eater:0 "Soul Eaters"
- civic_vb_psi_soul_eater_desc:0 "This empire had been corrupted by the malicious beings from beyond physical world. Now driven by the insatiable hunger, they seek other sapient life to devour."
+ origin_vb_psi_soul_eater:0 "Soul Eaters"
+ origin_vb_psi_soul_eater_desc:0 "This empire had been corrupted by the malicious beings from beyond physical world. Now driven by the insatiable hunger, they seek other sapient life to devour."
  civic_vb_psi_soul_eater_effects:0 "The main species will receive the §SSoul Eater§! trait. After 30 years grace period they will need to consume souls to stay productive. \n\nAliens who lack this trait, while being allowed to reside in the empire according to empire's policies, while have their souls gradually eroded and eventually will succumb to strange malaise, providing §Ssustenance§! to the §SSoul Eater§! species. \n\nHigher balance between consumption and provision of souls would increase output of §SSoul Eater§! pops as well as overall £influence §YInfluence§! and £unity §YUnity§! production as well as research speed, while hunger would increase their combat abilities. \n\nSoul eater empires are not allowed to pursue §Ysynthetic§! or §Ypsionic ascension§!, or research £society §M$tech_psionic_theory$§!."
  
- civic_vb_psi_touched_by_the_shroud:0 "Touched by the Shroud"
- civic_vb_psi_touched_by_the_shroud_desc:0 "Throughout its early history this empire was influenced by the Shroud - a strange realm that lies beyond physical world."
+ origin_vb_psi_touched_by_the_shroud:0 "Touched by the Shroud"
+ origin_vb_psi_touched_by_the_shroud_desc:0 "Throughout its early history this empire was influenced by the Shroud - a strange realm that lies beyond physical world."
  civic_vb_psi_touched_by_the_shroud_effects:0 "The Shroud helps this empire to with discoveries and inventions.\nOnce the empire gain its first §Sascension perk§!, it will gain £society §M$tech_psionic_theory$§! for free."
  
  trait_vb_psi_soul_eater:0 "Soul Eaters"
@@ -121,14 +121,14 @@
  
  vb_psi_not_soul_eaters:0 "$TRIGGER_FAIL$Must not be §SSoul Eaters§!."
  
- casus_belli_vb_psi_cb_soul_eater:0 "Soul Hunt"
+ cb_soul_eater_hunger:0 "Soul Hunt"
  casus_belli_vb_cb_containment_soul_eater:0 "$casus_belli_cb_containment$"
  
  vb_wg_end_threat_soul_eater:0 "$war_goal_wg_end_threat$"
  vb_wg_end_threat_soul_eater_desc:0 "$war_goal_wg_end_threat_desc$"
  
- vb_wg_soul_eating:0 "Obtain Fresh Souls"
- vb_wg_soul_eating_desc:0 "War is waged to secure fresh supply of souls to sustain Soul Eaters."
+ wg_soul_eater_hunger:0 "Obtain Fresh Souls"
+ wg_soul_eater_hunger_desc:0 "War is waged to secure fresh supply of souls to sustain Soul Eaters."
  
  vb_psi_need_to_be_hungry:0 "Need to be at least §PFamished§!."
  
@@ -151,7 +151,7 @@
  vb_psi_vortex.3.a:0 "Petition to trade a planet for sustenance."
  vb_psi_vortex.recently_petitioned:0 "You have already petitioned The Stranger for something recently."
  vb_psi_vortex.not_hungry_enough:0 "Your sustenance is not low enough."
- vb_psi_vortex.no_valid_planet:0 "You don't have a planet to interest The Stranger: Planet must not be your capital and must have at least 5 Soul Eater pops"
+ vb_psi_vortex.no_valid_planet:0 "You don't have a planet to interest The Stranger: Planet must not be your capital and must have at least 20 Soul Eater pops"
  vb_psi_vortex.3.b:0 "Petition to trade sustenance for resources."
  vb_psi_vortex.3.b.tooltip:0 "You will lose 2 sustenance levels."
  vb_psi_vortex.too_hungry:0 "Your sustenance is already too low."
@@ -183,8 +183,8 @@
  pc_shrouded_pg_tile:0 "Shrouded land"
  pc_shrouded_pg_tile_desc:0 "The surface of the planet, enveloped in the fog of the Shroud."
 
- civic_millionaire:0 "Millionaire"
- civic_millionaire_desc:0 "With the birth of civilization from space flew a container with a strange liquid inside. It was written on the container that the one who drinks this liquid will live a million of years. One person found and drank the liquid, and many years later he became the ruler, trying to lead his empire to prosperity."
+ origin_millionaire:0 "Millionaire"
+ origin_millionaire_desc:0 "With the birth of civilization from space flew a container with a strange liquid inside. It was written on the container that the one who drinks this liquid will live a million of years. One person found and drank the liquid, and many years later he became the ruler, trying to lead his empire to prosperity."
  civic_millionaire_effects:0 "Makes leader immortal"
 
  trait_gestalt_individual:0 ""
@@ -222,19 +222,16 @@
  pg.7.desc:0 "All previous discoveries and revelations were only prelude to this. Our psionic abilities and genetical revolution were the last steps before the Great Awakening. Our best scientists had finally broke chains of individuality which were restricting us for so long. Today the all [Root.Owner.GetSpeciesNamePlural] woke up as one."
  pg.7.a:0 "WE have awoken"
 
- civic_isolated:0 "Isolated"
- civic_isolated_desc:0 "At the dawn of our civilization, aliens visited us. They took us from our home planet and moved to another one. There are three stars shine and  according to their assurances we will be safe. They left us the gate in case we decide one day to leave our new home."
+ origin_isolated:0 "Isolated"
+ origin_isolated_desc:0 "At the dawn of our civilization, aliens visited us. They took us from our home planet and moved to another one. There are three stars shine and  according to their assurances we will be safe. They left us the gate in case we decide one day to leave our new home."
  civic_isolated_effects:0 "You appear in the system without hyperlines, with two habbitable planets, besides the starting one, and ruined gates."
- START_SCREEN_PART_TWO_ISOLATED:0 "One day, the ships of unknown creatures descended from the sky. They said they wanted to protect us. We were taken away to a faraway system with three suns. After relocating to a new planet, the aliens helped us settle, and then flew away. Their last words were that we would be safe and that if one day we are going to leave our new home, we have to use the gate. "
- ap_shrouded_worlds:0 "Shrouded Worlds"
+ START_SCREEN_PART_TWO_ISOLATED:0 "Since time immemorial our civilizition had grown and developed.\n\nOne day, the ships of unknown creatures descended from the sky. They said they wanted to protect us. We were taken away to a faraway system with three suns. After relocating to a new planet, the aliens helped us settle, and then flew away. Their last words were that we would be safe and that if one day we are going to leave our new home, we have to use the gate, which they left in the system.\n\nAnd now, after all these years, we've developed technology for space travel and we are ready to explore universe."
+ 
+ ap_shrouded_worlds:0 "Portals to the Shroud"
  ap_shrouded_worlds_desc:0 "We have found a way to become even more effective and happier, through opening a Portal to the Shroud and collecting the strange fog."
  allow_shrouded_worlds:0 "By using this Ascension Perk, you will be able to open Portals to the Shroud on your planets through decisions."
- describe_shrouded_worlds:0 "The shrouded world is a planet whose atmosphere was enveloped in a fog that we could extract from the Shroud. In it we feel better, and also we can work more efficiently."
- ap_perfect_creatures:0 "Perfect Creatures"
- ap_perfect_creatures_desc:0 "We will be the pinnacle of evolution. We will be perfect. No one will be able to resist us."
- ap_perfect_creatures_effect:0 "Trait "Perfect Creatures" will be added to all citizens of your Empire. It will make your leaders immortal."
- pg.8.name:0 "Comprehension of perfection"
- pg.8.desc:0 "After many years of research and experimentation in the field of biology and genetics, we finally came to the perfection of the flesh above the machines. For us, nothing more is impossible." 
+ describe_shrouded_worlds:0 "The shrouded world is a planet whose atmosphere was enveloped in a fog that we could extract from the Shroud. In it we feel better, and also we can work more efficiently"
+ 
  trait_perfect_creature:0 "Perfect creatures"
  trait_perfect_creature_desc:0 "The pinnacle of evolution. No organisms are better and more efficient than these.."
  decision_shrouded_world:0 "Open a Portal to the Shroud"
@@ -242,6 +239,81 @@
  shrouded_world:0 "Strange Fog from the Shroud"
  shrouded_world_desc:0 "A portal to the Shroud was opened on this planet. It lets in a strange fog into the atmosphere."
 
- civic_cluster:0 "Outside of the galaxy"
- civic_cluster_desc:0 "Ever since the first time we could see the stars through telescopes, we discovered a huge cluster of them - the galaxy, close to where we were. We were born in a system that is in a constellation outside the galaxy. If we want to develop further and get to the galaxy, we must master this cluster."
+ origin_cluster:0 "Outside of the galaxy"
+ origin_cluster_desc:0 "Ever since the first time we could see the stars through telescopes, we discovered a huge cluster of them - the galaxy, close to where we were. We were born in a system that is in a constellation outside the galaxy. If we want to develop further and get to the galaxy, we must master this cluster."
  civic_cluster_effects:0 "You will appear in one of the constellation systems outside the galaxy. In one of the systems there is a wormhole leading to the main galaxy."
+
+ ap_perfect_creatures:0 "Perfect Creatures"
+ ap_perfect_creatures_desc:0 "For a very long time, our scientists have tried to make our bodies and our physiology better. We have already learned a lot, we can change whole species. But we still have where to strive. Perhaps one day we can become perfect."
+ ap_perfect_creatures_effect:0 "Trait "Perfect Creatures" will be added to all citizens of your Empire after finishing special project. This will make your leaders immortal."
+
+ pg.9.name:0 "The Gene of Perfection"
+ pg.9.desc:0 "There were some researches in this field before, but they were long ago. We were primitive and we could not figure this out. Now we have all this knowledge of biology and genetical modification. Therefore, it's time to make another search attempt for the Gene of Perfection."
+ pg.9.a:0 "Let's do this!"
+
+ GENE_OF_PERFECTION:0 "Searching for the Gene of Perfection"
+ GENE_OF_PERFECTION_DESC:0 "Our scientists should carry out experiments in order to find the gene, that will provide a better future for out empire."
+
+ pg.8.name:0 "Comprehension of perfection"
+ pg.8.desc:0 "After many years of research and experimentation in the field of biology and genetics, our scientists have finally found the gene, that we were looking for. The Gene of Perfection. This gene improves our abilities exponentially. This means, that we came to the perfection of the flesh above the machines. For us, nothing more is impossible." 
+
+
+ pg.10.name:0 "[From.GetSpeciesNamePlural] Became Energetic Creatures"
+ pg.10.desc:0 "All [From.GetSpeciesNamePlural]  have undergone a great change. They managed to find a way to get rid of their physical bodies and become pure energy.\n\nThis is a big step forward to the better future for them, but it could be a threat for us."
+
+ pg.11.name:0 "Soul Eaters Became Energetic Creatures"
+ pg.11.desc:0 "All Soul Eaters [From.GetSpeciesNamePlural]  have undergone a great change. They managed to find a way to get rid of their physical bodies and become pure energy.\n\nThis is a big step forward to the better future for them, but now they become even a bigger threat for us and for the whole galaxy."
+ PG_TERRIBLE:0 "Amazing but scary"
+
+
+
+ origin_pg_moon_start:0 "Lone Colony"
+ origin_pg_moon_start_desc:0 "At the dawn of the space age, we discovered that there is another suitable planet in our solar system. We were able to quickly launch the first colonial ship. The colony flourished, but one day our planet fell silent. All comunications were no longer there, nor the help for the newly created colony. The colony was located on a pretty good planet, so after a hundred years, we are returning to space again..."
+ origin_pg_moon_start_effects:0 "You start on a colony in your home system, but without access to your old capital planet."
+
+ pg_old_home:0 "Loss of the homeworld"
+ pg_old_home_desc:0 "We know what happened to our home. We will try to avoid history repeating itself."
+ pg_old_world_site:0 "Loss of the homeworld"
+ pg_old_world_site_desc:0 "The planet looks very deplorable. Here, everything is destroyed, but no traces of radiation that sweeps aside the most obvious theory - a nuclear war. It is necessary to conduct a more thorough investigation."
+
+ pgarc.1.name:0 "Dead planet"
+ pgarc.1.desc:0 "The entire surface of the planet is covered with huge cracks and collapsed buildings. But some buildings can be viewed on the surface. They look almost the same, but are located in different parts of the planet. Perhaps we should explore one of them."
+ pgarc.1.a:0 "What happened here?"
+
+ pgarc.2.name:0 "Entering the building..."
+ pgarc.2.desc:0 "Once scientists have entered the building, they saw many bodies scattered on the floor near the entrance. The bodies are in very poor condition. Looks like they were killed by force.\n Not far from the entrance was a terminal or computer. There we found information about tectonic plates, monitoring of their movements, as well as parts of blueprints of devices unknown to us. The blueprints are very far from complete and it is not clear what kind of device should be assembled according to them."
+
+ pgarc.3.name:0 "Security systems"
+ pgarc.3.desc:0 "When scientists moved to the next floor, security systems began to work. Archaeologists found this surprising, since it did not seem like there was electricity. Scientists managed to avoid deaths and disable security systems."
+
+ pgarc.4.name:0 "Scary truth"
+ pgarc.4.desc:0 "Having finally reached the main room of this building, scientists discovered another terminal. It still had the power, as well as in security systems at this level which scientists had recently disabled. In the terminal scientists found information that is still unknown to our science and can help technological progress. In addition to technical data, there were system logs, as well as employee's journals. This information was horrifying... \nThis building, like other similar buildings, was built by the government of the country, which bought blueprints and equipment from one of the multinational corporations. The equipment purchased from the corporation was a seismic weapon. \nThe terminal indicated that the weapons had been tested on one of the smallest countries in the world about a year before the planet was destroyed. Even during the first tests, the situation on the planet was tense. \nIt is unknown who had struck first, but a ten aftershocks that occurred throughout the planet at the same time, did not leave anyone alive on the surface. \nInside the complex, people remained alive, although crippled. Despite this, they were destroyed by the security system of the building, which failed due to aftershocks. \n\nAnd so the story of the inhabitants of the planet ended."
+
+ pgarc.terrible:0 "We must not repeat their mistakes"
+
+ START_SCREEN_PART_TWO_PG_MOON:0 "Since time immemorial our civilizition had grown and developed.\n\nAt the beginning of the space age, we had found a habitable planet within our solar system. The leading countries of the planet had come together to build a spaceship that can take the colonists to their new home.\nEverything was going well, the colony was developing. But once all the communications with the homeworld of the colonists was lost. The planet did not respond at any frequency. Help also did not come. \nThe first decades without help from their homeland became especially difficult, but after a hundred years after the loss of communication, the colonists are were able to build up the necessary infrastructure, and go finally into space and even have the opportunity to visit the neighboring system, to find out what happened to their homeworld..."
+
+ trait_brainwashed_psi:0 "Subconsciously enslaved"
+ trait_brainwashed_psi_desc:0 "This specie was psionically altered into being content and very receptive to their better's ideals. This leads to total obedience, but lack of independent rational thought undermines any scientific effort."
+
+ trait_brainwashed_se:0 "Clouded mind"
+ trait_brainwashed_se_desc:0 "The mind of this species was clouded by the Soul Eaters. Due to this, they are kept in perfect humility and can reproduce even in the empires of the Soul Eaters, but the lack of independent rational thinking does not allow them to engage in scientific activities."
+
+ tech_brainwash_soul_eater:0 "Control over others"
+ tech_brainwash_soul_eater_desc:0 "After become energy, Soul Eaters can learn to fog up the consciousness of aliens and make them reproduce even when their souls are being consumed."
+
+ trait_pg_soul_eaten:0 "Soul Malaise"
+ trait_pg_soul_eaten_desc:0 "This species constantly feels a strange weakness. They have nightmares at night and in the mornings some of them don't wake up..."
+
+ pg_last_hope:0 "Survivors"
+ decision_last_hope:0 "Evacuation"
+ decision_last_hope_desc:0 "To survive, we will have to leave the planet. To do this, we build an ark and go to the stars to look for a new home."
+
+ pg_the_ark:0 "The Ark"
+ pg_the_new_hope:0 "New Hope"
+ pg_the_new_hope_desc:0 "Finally, we found a new world that has become our home. The inhabitants are filled with joy and hope for a new bright future."
+
+ tech_pg_the_ark:0 "The Ark Project"
+ tech_pg_the_ark_desc:0 "In case we will face imminent death, we must leave our worlds to find a new home. The Ark will become our salvation. Thanks to it, our race will be able to survive."
+
+ requires_technology_tech_mine_zro:0 "Requires technology Zro Distillation"

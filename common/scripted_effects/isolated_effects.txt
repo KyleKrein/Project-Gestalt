@@ -1,4 +1,4 @@
-change_pc_to_normal = {
+pg_change_pc_to_normal = {
 	change_pc = rl_habitable_normal
 	root = {
 		switch = {
@@ -62,30 +62,20 @@ change_pc_to_normal = {
 	}
 }
 
-destroy_buildings_and_colony = {
+pg_destroy_buildings_and_colony = {
 	remove_all_buildings = yes
 	destroy_colony = yes
 }
 
-create_starbase_starport_from_planet = {
-	owner = {
-		save_event_target_as = starbase_owner
-	}
-	solar_system = {
-		create_starbase = yes
-		starbase = {
-			set_starbase_size = starbase_starport
-		}
-	}
-}
 
-create_starbase = {
+
+pg_create_starbase = {
 	if = {
 		limit = {
 			exists = starbase
 		}
 		starbase = {
-			set_owner = event_target:starbase_owner
+			set_owner = event_target:pg_starbase_owner
 		}
 	}
 	else = {
@@ -96,11 +86,86 @@ create_starbase = {
 	}
 }
 
-starbase_add_shipyard_0 = {
+pg_starbase_add_shipyard_0 = {
 	starbase = {
 		set_starbase_module = {
 			slot = 0
 			module = shipyard
+		}
+	}
+}
+
+pg_create_starbase_starport_from_planet = {
+	owner = {
+		save_event_target_as = pg_starbase_owner
+	}
+	solar_system = {
+		pg_create_starbase = yes
+		starbase = {
+			set_starbase_size = starbase_starport
+		}
+	}
+}
+
+pg_change_pc_to_almost_normal = {
+	change_pc = rl_habitable_normal
+	root = {
+		switch = {
+			trigger = ideal_planet_class
+			pc_desert = {
+				prev = {
+					change_pc = pc_arid
+				}
+			}
+			pc_tropical = {
+				prev = {
+					change_pc = pc_continental
+				}
+			}
+			pc_arid = {
+				prev = {
+					change_pc = pc_desert
+				}
+			}
+			pc_continental = {
+				prev = {
+					change_pc = pc_tropical
+				}
+			}
+			pc_ocean = {
+				prev = {
+					random_list = {
+						40 = { change_pc = pc_tropical }
+						60 = { change_pc = pc_continental }
+					}	
+				}
+			}
+			pc_tundra = {
+				prev = {
+					change_pc = pc_arctic
+				}
+			}
+			pc_arctic = {
+				prev = {
+					change_pc = pc_tundra
+				}
+			}
+			pc_alpine = {
+				prev = {
+					random_list = {
+						40 = { change_pc = pc_tundra }
+						60 = { change_pc = pc_arctic }
+					}
+				}
+			}
+			pc_savannah = {
+				prev = {
+					random_list = {
+						40 = { change_pc = pc_desert }
+						60 = { change_pc = pc_arid }
+					}
+				}
+			}
 		}
 	}
 }

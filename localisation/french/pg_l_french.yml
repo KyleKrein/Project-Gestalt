@@ -1,0 +1,319 @@
+﻿l_french:
+ 
+ gestalt_army:0 "Armée ascendante"
+ gestalt_army_desc:0 "Une armée d’entités basées sur l’énergie qui vont BRÛLER chaque planète ennemie."
+ ap_project_gestalt:0 "Project Gestalt"
+ ap_project_gestalt_desc:0 "Après avoir acquis des capacités psioniques, nous avons réalisé que nôtres corps avait des limites. Nous devons quitter ce corps pour quelque chose de mieux."
+ pg_tooltip:0 "A la fin de ce projet, nous deviendrons immortels."
+ pg.1.name:0 "Project Gestalt"
+ pg.1.desc:0 "Pour un avenir radieux, nous devons rejeter ces morceaux de chair et devenir des êtres supérieurs, de l’énergie pure. Nous libérerons nos âmes de l’esclavage dans ces sacs en cuir et deviendrons libres et éternels. Il n’y aura pas de maladie, pas de mort et pas de négatif dans nos vies. Nous serons capables de connaître l’infini, nous deviendrons immortels."
+ pg.1.a:0 "Pour l’avenir !"
+ PROJECT_GESTALT_DESC:0 "En explorant le Suaire et en établissant des contacts avec les créatures qui y vivent, nous avons pu comprendre comment séparer l’âme du corps physique. Dans le cadre du projet Gestalt, nous allons essayer d’aider nos civils à évoluer."
+ pg.2.name:0 "Projet Gestalt achevé"
+ pg.2.desc:0 "Le projet Gestalt a été achevé avec succès et tout les êtres psioniques de notre empire ont pu laisser derrière eux des corps physiques et devenir de l’énergie pure. Pour soutenir la vie des êtres énergétiques, il faut dépenser beaucoup d’énergie, mais en même temps, en raison de la disparition des besoins alimentaires et de sommeil, nos résidents peuvent consacrer plus de temps à la recherche et à l’exploitation minière."
+ requires_ap_transcendence:0 "Nécessite l’atouts de l’ascension Transcendence"
+ PROJECT_GESTALT:0 "Project Gestalt"
+ GESTALT:0 "Energie"
+ leader_trait_ruler_gestalt:0 "La règle parfaite"
+ leader_trait_ruler_gestalt_desc:0 "Ce dirigeant peut gouverner et unir notre peuple plus efficacement."
+ trait_gestalt:0 "Energie pure"
+ trait_gestalt_desc:0 "C’est l’âme de l’être qui a été séparée du corps dans le Projet Gestalt."
+ buildable_gestalt_pop_1_desc:0 "L’âme d’un résident de notre empire"
+ edict_pg_energy_upgrade:0 "Energie pure"
+ edict_pg_energy_upgrade_desc:0 "Nous avons déjà été en mesure d’atteindre la perfection. Maintenant, nous allons aider les autres. Ils doivent rejeter ces corps terribles et faibles."
+ pg_energy_upgrade:0 "Toutes les psioniques deviendront de l’énergie pure."
+ pg_trait_psionic:0 "Nécessite au moins un êtres psionique dans l’empire pour l'activer."
+ 
+ trait_gestalt_research_output_1:0 "Amélioration de la communication avec le Suaire"
+ trait_gestalt_research_output_1_desc:0 "Avec une meilleure communication avec le Suaire, nous pouvons recevoir des connaissances de ce dernier."
+ trait_gestalt_research_output_2:0 "Télépathie sur de grandes distances"
+ trait_gestalt_research_output_2_desc:0 "Maintenant, nous pouvons échanger des connaissances, en étant dans n’importe quelle partie de la galaxie."
+ trait_gestalt_research_output_3:0 "Fusion complète avec le Suaire"
+ trait_gestalt_research_output_3_desc:0 "Maintenant, nous allons devenir une partie du Suaire et recevoir toutes les connaissances. Mais cette connexion constante nécessite une énergie supplémentaire."
+ 
+ trait_gestalt_unity_1:0 "Force dans l’unité"
+ trait_gestalt_unity_1_desc:0 "Après avoir séparé nos âmes des corps, nous sommes devenus un peuple plus uni."
+ trait_gestalt_unity_2:0 "Conscience unie"
+ trait_gestalt_unity_2_desc:0 "En unissant nos esprits, nous pouvons mieux nous comprendre."
+ trait_gestalt_unity_3:0 "Unité du peuple"
+ trait_gestalt_unity_3_desc:0 "Nous avons réussi à nous unir à tous les gens pour atteindre l’objectif commun."
+ 
+ trait_gestalt_talented:0 "Exceptionnellement talentueux"
+ trait_gestalt_talented_desc:0 "Après être devenus des créatures Gestalt, nous avons tous réalisé que nous pouvons réaliser plus."
+ 
+ trait_gestalt_lazy_1:0 "Paresseux"
+ trait_gestalt_lazy_1_desc:0 "Maintenant, quand nous avons accompli beaucoup de choses, nous pouvons nous allonger et nous reposer."
+ trait_gestalt_lazy_2:0 "Très paresseux"
+ trait_gestalt_lazy_2_desc:0 "Le peuple ne s’efforce plus d’apprendre l’inconnu."
+ trait_gestalt_lazy_3:0 "Impuissant"
+ trait_gestalt_lazy_3_desc:0 "Cette course est en stagnation presque complète et ne se développe plus du tout."
+ 
+ trait_gestalt_quarrelsome:0 "Divisés"
+ trait_gestalt_quarrelsome_desc:0 "Après avoir séparé nos âmes des corps, les gens sont embourbés dans la peur. Ils ont peur de leur nouvelle espèce, et certains d’entre eux sont même prêts à se rebeller."
+ 
+ crisis.1010.b:0 "Ils... Ils sont comme nous."
+ crisis.1050.m:0 "Pourquoi chassez-vous les gens de cette galaxie ?"
+ crisis.1050.m.response:0 "... Faim... ça nous fait mal... et nous fait regarder ... pour les nouvelles âmes... Et... pour les absorber... Juste... ainsi... nous pouvons survivre..."
+ crisis.1050.p:0 "Pouvons-nous vous aider à vous débarrasser de la faim?"
+ crisis.1050.p.response:0 "... nous avons essayé... pour guérir... depuis des centaines d’années... mais il ... n’a pas fonctionné ... Vous... sera ... être absorbé comme... le reste..."
+ 
+ vb_psi_empire:0 "Empire Sombre"
+ vb_psi_empire_desc:0 "Cette forme autocratique de gouvernement Mangeur d’Âme est gouvernée par une seule personne, qui forme un apprenti pour les remplacer après leur mort."
+ VB_PSI_MASTER:0 "Maître"
+ VB_PSI_MISTRESS:0 "Maîtresse"
+ VB_PSI_APPRENTICE:0 "Apprenti"
+ VB_PSI_APPRENTICE_F:0 "$VB_PSI_APPRENTICE$"
+ 
+ vb_psi_dictatorship:0 "Magocratie noire"
+ vb_psi_dictatorship_desc:0 "Cette forme autocratique de gouvernement Mangeur d’Âme a une seule personne élue à vie pour exercer le pouvoir politique et esothésique suprême."
+ VB_PSI_LICH:0 "Lich"
+ VB_PSI_LICH_F:0 "$VB_PSI_LICH$"
+ 
+ vb_psi_oligarchy:0 "Coven suprême"
+ vb_psi_oligarchy_desc:0 "Cette oligarchie mangeuse d’âme est gouvernée par un groupe d’occultistes puissants, enthrussés pour gouverner à la fois la poursuite mondaine et ésotherique de ses citoyens."
+ VB_PSI_SUPREME_WARLOCK:0 "Démons suprême"
+ VB_PSI_SUPREME_WITCH:0 "Supreme Witch"
+ 
+ vb_psi_democracy:0 "Assemblés chamanique"
+ vb_psi_democracy_desc:0 "Cette forme démocratique du gouvernement Mangeur d’Âme est gouvernée par une multitude d’élus, qui canalisent les volontés politiques et les pouvoirs obscurs de leurs électeurs."
+ VB_PSI_HIGH_SHAMAN:0 "Haut Chaman"
+ VB_PSI_HIGH_SHAMANESS:0 "Haut Chamanes"
+ 
+ origin_vb_psi_soul_eater:0 "Mangeur d’Âme"
+ origin_vb_psi_soul_eater_desc:0 "Cet empire avait été corrompu par les êtres malveillants de l'au-delà. Maintenant poussés par la faim insatiable, ils cherchent d’autres vies sapient à dévorer."
+ civic_vb_psi_soul_eater_effects:0 "L’espèce principale recevra le trait §SMangeur d’Âme§!. Après 30 ans de période de grâce, ils devront consommer des âmes pour rester productifs. \n\nLes étrangers et les resident de l'empire qui n’ont pas ce trait, verrons leurs Âmes progressivement érodé et finiront par succomber à un malaise étrange, fournissant la §Ssubsistance§! à l’espèce §SMangeur d’Âme§!. \n\nUn équilibre plus élevé entre la consommation et la fourniture d’âmes augmenterait la production de pops Mangeur d’Âme ainsi que de £influence §YInfluence§! et £unity d'§YUnité§!, la production ainsi que la vitesse de la recherche, est la faim augmenterait leurs capacités de combat. \n\nLes empires Mangeurs d’Âme ne sont pas autorisés à poursuivre §Yl’ascension synthétique§! ou §Ypsionique§!, ou la recherche £society §M$tech_psionic_theory$§!." 
+ 
+ origin_vb_psi_touched_by_the_shroud:0 "Touché par le Suaire"
+ origin_vb_psi_touched_by_the_shroud_desc:0 "Tout au long de ses débuts de l’histoire, cet empire a été influencé par le Suaire - un royaume étrange qui se trouve au-delà du monde physique."
+ civic_vb_psi_touched_by_the_shroud_effects:0 "Le Suaire aide cet empire à faire des découvertes et des inventions. \nUne fois que l’empire aura obtenu son premier £society §SAtouts de l’ascension§!, il gagnera t§M$tech_psionic_theory$§! gratuitement."
+ 
+ trait_vb_psi_soul_eater:0 "Mangeur d’Âme"
+ trait_vb_psi_soul_eater_desc:0 "Affectée par les énergies sombres de l'au-delà du monde physique, cette espèce est entraînée par une soif insatiable d’âmes d’êtres sapients."
+ 
+ vb_psi_food_level_0:0 "Mangeur d’Âme: §RDrainé§"
+ vb_psi_food_level_1:0 "Mangeur d’Âme: §RAffamés§"
+ vb_psi_food_level_2:0 "Mangeur d’Âme: §PAffamés§"
+ vb_psi_food_level_3:0 "Mangeur d’Âme: §LFaim§!"
+ vb_psi_food_level_4:0 "Mangeur d’Âme: §YSoutenue§"
+ vb_psi_food_level_5:0 "Mangeur d’Âme: §ERégalés§"
+ vb_psi_food_level_6:0 "Mangeur d’Âme: §BFarcies§"
+ vb_psi_food_level_7:0 "Mangeur d’Âme: §GGaver§"
+ 
+ vb_psi_food_level_0_pop:0 "Drainé"
+ vb_psi_food_level_1_pop:0 "Affamés"
+ vb_psi_food_level_2_pop:0 "Affamés"
+ vb_psi_food_level_3_pop:0 "Faim"
+ vb_psi_food_level_4_pop:0 "Soutenue"
+ vb_psi_food_level_5_pop:0 "Régalés"
+ vb_psi_food_level_6_pop:0 "Farcies"
+ vb_psi_food_level_7_pop:0 "Gaver"
+ vb_psi_soul_malaise:0 "Malaise d'Âme"
+ 
+ personality_vb_psi_souleaters_personality:0 "Mangeurs d’Âmes"
+ personality_vb_psi_souleaters_personality_desc:0 "Mangeur d’Âme sont entraînés par la faim insatiable, et ne reculerons devant rien afin acquérir de nouvelles âmes à dévorer. Hostiles à presque tout le monde, ils ne considéreront l’alliance avec ceux qui sont inutiles pour eux comme des proies."
+ 
+ opinion_vb_psi_souleaters_on_others: "Mangeur d’Âme"
+ opinion_vb_psi_others_on_souleaters:0 "Mangeurs d’Âme Redoutés"
+ opinion_vb_psi_ate_our_species:0 "Dévoré Nos Âmes"
+ opinion_vb_psi_souleater_on_souleater:0 "Autres Mangeurs d’Âme"
+ 
+ START_SCREEN_PART_TWO_SOULEATERS:0 "Autrefois mémorisables, nos ancêtres avaient découvert un endroit étrange au-delà du physique. Personne ne se souvient maintenant de quelle était leur intention, mais leurs poursuites les imprégnés d’un pouvoir terrible et d’une faim encore plus terrible. Des guerres ont été menées et le sang a été versé pour récolter des âmes de vaincus, jusqu’à ce que seuls les plus forts restent. Cependant, notre propre espèce est maintenant composée de prédateurs. Nous ne pouvons pas soutenir sur nos frères et cela signifie que nous devons tourner notre regard vers les étoiles, à la recherche de nouvelles proies."
+ 
+ vb_psi_not_soul_eaters:0 "$TRIGGER_FAIL$Ne doit pas être §SMangeurs d’Âme§!."
+ 
+ cb_soul_eater_hunger:0 "Chasse à l'Âme"
+ casus_belli_vb_cb_containment_soul_eater:0 "$casus_belli_cb_containment$"
+ 
+ vb_wg_end_threat_soul_eater:0 "$war_goal_wg_end_threat$"
+ vb_wg_end_threat_soul_eater_desc:0 "$war_goal_wg_end_threat_desc$"
+ 
+ wg_soul_eater_hunger:0 "Obtenir des Âmes Fraîches"
+ wg_soul_eater_hunger_desc:0 "La guerre est menée pour assurer un approvisionnement frais d’âmes pour soutenir les Mangeurs d’Âme."
+ 
+ vb_psi_need_to_be_hungry:0 "Besoin d’être au moins§PFamished§!."
+ 
+ #Touched by the Shroud event
+ vb_psi_tocuhed.1.name:0 "Théorie Psionique"
+ vb_psi_tocuhed.1.desc:0 "Depuis la nuit des temps, notre histoire contient des dossiers de personnes aux capacités surnaturelles : chamans, magiciens, télépathes, médiums - dispersés à travers la population. Aujourd’hui, nous avons enfin terminé le long processus de catalogage et d’étude de leurs capacités et sommes prêts à formuler une théorie cohérente et complète sur eux."
+ 
+ ap_ascension_pc:0 "Ascension"
+ ap_ascension_pc_desc:0 "Notre corps est juste une coquille qui nous gêne. Si nous nous en débarrassons, nous deviendrons meilleurs, nous deviendrons plus efficaces."
+ pg_tooltip1:0 "Nous deviendrons immortels pure énergie"
+ pg.3.name:0 "Ascension Énergétique"
+ pg.3.desc:0 "Enfin, nous avons pu laisser derrière nous notre corps physique et devenir de l’énergie pure. Pour maintenir notre vie, nous devons dépenser beaucoup d’énergie, mais en même temps nous sommes devenus immortels et maintenant nous sommes prêts à absorber plus efficacement l’âme des autres."
+ 
+ GESTALTSE:0 "Énergie Corrompue"
+ trait_corrupted:0 "Corrompu"
+ trait_corrupted_desc:0 "Un jour, ces créatures ont été changées par le Suaire, mais même sans leur corps physique, elles ressentent la faim."
+ 
+ VB_PSI_BLEAK_VORTEX_TITLE:0 "Vortex Sombre"
+ vb_psi_vortex.3.desc:0 "Il s’agit d’un royaume tordu au-delà du monde physique, un éclat de beaucoup plus grand ensemble qui, une fois que nous avons contacté. \n\nC’est un endroit étrange où des entités au-delà de notre compréhension se cachent et attendent que nous venions les pétitionner. \n\nCertains le disent, c'est un endroit où les méchants vont quand ils meurent. Certains, que c’est un endroit de nos cauchemars prennent vie. Ce que nous savons avec certitude, c’est que l’Étranger, un être, ou peut-être une chose qui nous a donné notre pouvoir et notre faim est ici, en attendant que nous fassions notre demande."
+ vb_psi_vortex.3.a:0 "Pétition pour le commerce d’une planète contre la subsistance."
+ vb_psi_vortex.recently_petitioned:0 "Vous avez déjà demandé quelque chose à l’Étranger récemment."
+ vb_psi_vortex.not_hungry_enough:0 "Votre subsistance n’est pas assez faible."
+ vb_psi_vortex.no_valid_planet:0 "Vous n’avez pas de planète pour intéresser l’Étranger: La planète ne doit pas être votre capitale et doit avoir au moins 20 pops mangeur d’âme"
+ vb_psi_vortex.3.b:0 "Pétition pour le commerce de la subsistance contre les ressources."
+ vb_psi_vortex.3.b.tooltip:0 "Vous perdrez 2 niveaux de subsistance."
+ vb_psi_vortex.too_hungry:0 "Votre subsistance est déjà trop faible."
+ vb_psi_vortex.3.q:0 "Quitter le vortex"
+ 
+ 
+ vb_psi_vortex.4.desc:0 "Il semble que votre demande a piqué l’intérêt de l’Étranger. \n\n"Peu de fournitures d’âme, n’est-ce pas ? Je peux t’aider. Il y a un joli petit monde appelé §Y[desired_planet.GetName]§!. Je pourrais vous le prendre et en retour... Eh bien, disons simplement que vous n’avez pas à mourir de faim.""
+ vb_psi_vortex.4.a:0 "Faire Affaire."
+ vb_psi_vortex.4.b:0 "Ne Pas Faire Affaire."
+ 
+ vb_psi_vortex_boon:0 "La Générosité de l’Étranger"
+ vb_psi_petitioned_vortex:0 "Pétition récente de l’Étranger"
+ 
+ ap_united_machines:0 "Conscience Unique"
+ ap_united_machines_desc:0 "Après avoir transféré notre conscience dans des corps synthéthiques, nous avons réalisé que nous avons quasiment atteint notre idéal. Il reste la dernière étape pour unir tous nos esprit en un seul esprit"
+ requires_tech_um:0 "Requiert la technologie §M$tech_united_machines$ "
+ tech_united_machines:0 "Consolidation de la Conscience"
+ tech_united_machines_desc:0 "Nous avons trouvé un moyen d'améliorer l'éfficacité de la transmission d'information, ainsi que l'exécution de diverses actions, combinant deux consciences synthétiques en une seule."
+ pg.4.name:0 "Intelligence de la machine"
+ pg.4.desc:0 "En combinant la conscience de tout synthétiques dans notre empire, nous sommes capable de créer une seule conscience efficace, mais nous avons besoin de nous sacrifier pour le bénéfice de tout l'empire."
+ pg.4.a:0 "Bien"
+ trait_singlemind:0 "Esprit Unique"
+ trait_singlemind_desc:0 "Les habitants de cet empire sont capable de combiner leurs consciences en une et elle devient plus efficace"
+ civic_united_machines_effects:0 "Production de ressources +25%; Dégâts des armées +20%"
+ requires_synth:0 "Nous avons besoin de synthéthiques dans l'empire"
+ 
+ pc_shrouded_pg:0 "Monde enveloppé"
+ pc_shrouded_pg_desc:0 "Ce monde enveloppé a été artificiellement créé par une race d’êtres énergiques."
+ pc_shrouded_pg_tile:0 "Terres enveloppées"
+ pc_shrouded_pg_tile_desc:0 "La surface de la planète, enveloppée dans le brouillard du Suaire."
+
+ origin_millionaire:0 "Millionnaire"
+ origin_millionaire_desc:0 "La civilisation de l’espace a donner un récipient avec un liquide étrange à l’intérieur. Il a été écrit sur le récipient que celui qui boit ce liquide vivra un million d’années. Une personne l'a trouvé et bu le liquide, et de nombreuses années plus tard, il est devenu le souverain, en essayant de conduire son empire à la prospérité." 
+ civic_millionaire_effects:0 "Rend le chef immortel"
+
+ trait_gestalt_individual:0 ""
+ trait_gestalt_individual_desc:0 ""
+
+ leader_trait_ruler_millionaire:0 "Millionnaire"
+ leader_trait_ruler_millionaire_desc:0 "Il y a longtemps, le chef à bu un liquide qui venais de l’espace, lui donnant un million d’années de vie. Il va essayer de mener son empire à la prospérité."
+ 
+ millionaire.2.title:0 "Fin de la boucle"
+ millionaire.2.desc:0 "Maintenant, quand nous avons beaucoup de technologie, nous devons fermer la boucle de temps, la création d’un liquide magique et l’envoyer dans le passé à notre grand chef."
+ millionaire.2.a:0 "Allons-y!"
+ SYNTHESIS:0 "Préparation"
+ SYNTHESIS_DESC:0 "Pour commencer, nous devons trouver un moyen de synthétiser le liquide qui s’est envolé vers notre planète il y a plusieurs siècles. Ensuite, nous allons construire un canon de temps pour envoyer un obus avec du liquide loin dans le passé. Enfin, préparons tout pour le lancement."
+ LAUNCH:0 "Lancement"
+ LAUNCH_DESC:0 "Après une longue préparation pour cet événement important, nous pouvons enfin compléter ce que nous avons commencé. Tout l’empire est impatient de lancer."
+  millionaire.3.title:0 "Ligne d’arrivée"
+ millionaire.3.desc:0 "Nous avons synthétisé le liquide désiré d’une plante ressemblant à une rose, qui a été trouvé sur l’une de nos planètes. Nous avons construit un canon qui peut briser l’espace-temps et envoyer le liquide dans le passé."
+ millionaire.3.a:0 "Bien!"
+ millionaire.4.title:0 "Lancement réussi"
+ millionaire.4.desc:0 "Nous avons lancé avec succès un conteneur avec du liquide dans le passé. Malheureusement, l’arme a s'est briser et il n’est pas possible de la réparer. Mais il y a de bonnes nouvelles. Nous avons commencé la production de médicaments à partir de la rose sauvage trouvée et maintenant tous les habitants de notre empire peuvent vivre beaucoup plus longtemps que d’habitude."
+ millionaire.4.a:0 "Merveilleux"
+ loop:0 "Fin de la boucle"
+ 
+ stranger_present:0 "Présent de l’Étranger"
+ pg.6.name:0 "Vortex Sombre"
+ pg.6.desc:0 "En explorant le Suaire, nous sommes tombés accidentellement dans une zone inexplorée. Ce n’est pas comme tout ce que nous avons vu plus tôt. Dès notres arrivés, l’Étranger nous a contactés. Cette créature ou cette chose est là pour toujours. L’Étranger nous offre son aide. Il nous donnera accès aux ressources et nous aidera si nous le laissons entrer dans nos cœurs."
+ pg.a:0 "Accepter"
+ stranger.y.tooltip:0 "Nous acceptons cette demande et laissons l’Étranger dans nos âmes."
+ exit.vortex:0 "Quitter Bleak Vortex"
+ exit.vortex.tooltip:0 "Peu importe comment cette créature veut nous aider, nous ne pouvons pas lui faire confiance."
+
+ ap_psionic_hive:0 "Esprit Psionique Unique"
+ ap_psionic_hive_desc:0 "Les modifications génétiques et les capacités psioniques nous aideront à devenir l’être unique le plus efficace de tout l’univers."
+ pg.7.name:0 "Le Vrai Réveil"
+ pg.7.desc:0 "Toutes les découvertes et révélations précédentes n’étaient qu’un prélude à cela. Nos capacités psioniques et notre révolution génétique ont été les dernières étapes avant le Grand Réveil. Nos meilleurs scientifiques avaient finalement brisé des chaînes d’individualité qui nous restreignaient depuis si longtemps. Aujourd’hui, tout [Root.Owner.GetSpeciesNamePlural] s’est réveillé comme un seul."
+ pg.7.a:0 "NOUS nous sommes réveillés"
+
+ origin_isolated:0 "Isolé"
+ origin_isolated_desc:0 "À l’aube de notre civilisation, les extraterrestres nous ont rendu visite. Ils nous ont demander de quitter notre planète natale et déménagé sur une autre. Il y a trois étoiles qui brillent et selon leurs assurances, nous serons en sécurité. Ils nous ont laissé le portail au cas où nous décidions un jour de quitter notre nouvelle maison."
+ civic_isolated_effects:0 "Vous apparaissez dans le système sans hyperlines, avec deux planètes habbitables, en plus de la première, et les portail en ruine."
+ START_SCREEN_PART_TWO_ISOLATED:0 "Depuis des temps immémoriaux, notre civilizition peu développée s’est développée. \n\nUn jour, les vaisseaux de créatures inconnues descendirent du ciel. Ils dissaient qu’ils voulaient nous protéger. Nous avons été emmenés dans un système lointain avec trois soleils. Après être arriver sur une nouvelle planète, les extraterrestres nous ont aidés à nous installer, puis se sont envolés. Leurs derniers mots étaient que nous serions en sécurité et que si un jour nous allons quitter notre nouvelle maison, nous devons utiliser la porte, qu’ils ont laissé dans le système."
+ 
+ ap_shrouded_worlds:0 "Portails vers le Suaire"
+ ap_shrouded_worlds_desc:0 "Nous avons trouvé un moyen de devenir encore plus efficaces et plus heureux, en ouvrant un portail au Suaire et en recueillant l’étrange brouillard."
+ allow_shrouded_worlds:0 "En utilisant ce points d'ascension, vous serez en mesure d’ouvrir des portails au Suaire sur vos planètes, depuis l'onglet décisions."
+ describe_shrouded_worlds:0 "Le monde enveloppé est une planète dont l’atmosphère était enveloppée dans un brouillard que nous pourrions extraire du Suaire. Nous nous sentons mieux, et nous pouvons aussi travailler plus efficacement"
+ 
+ trait_perfect_creature:0 "Créatures Parfaites"
+ trait_perfect_creature_desc:0 "Le summum de l’évolution. Aucun organisme n’est meilleur et plus efficace que ceux-ci.."
+ decision_shrouded_world:0 "Ouvrez un portail vers le Suaire"
+ decision_shrouded_world_desc:0 "L’ouverture d’un portail vers le Suaire sur cette planète nous permettra de pomper un brouillard aux propriétés étranges..."
+ shrouded_world:0 "Brouillard étrange du Suaire"
+ shrouded_world_desc:0 "Un portail vers le Suaire a été ouvert sur cette planète. Il laisse entrer un brouillard étrange dans l’atmosphère."
+
+ origin_cluster:0 "En dehors de la galaxie"
+ origin_cluster_desc:0 "Depuis la première fois que nous avons pu voir les étoiles à travers des télescopes, nous avons découvert un énorme amas d’entre eux - la galaxie, près de l’endroit où nous étions. Nous sommes nés dans un système qui se trouve dans une constellation à l’extérieur de la galaxie. Si nous voulons nous développer davantage et aller à la galaxie, nous devons maîtriser cet amas."
+ civic_cluster_effects:0 "Vous apparaîtrez dans l’un des systèmes de constellation en dehors de la galaxie. Dans l’un des systèmes il ya un vortex menant à la galaxie principale."
+
+ ap_perfect_creatures:0 "Créatures Parfaites"
+ ap_perfect_creatures_desc:0 "Pendant très longtemps, nos scientifiques ont essayé de rendre notre corps et notre physiologie meilleurs. Nous avons déjà beaucoup appris, nous pouvons changer des espèces entières. Mais nous avons encore où nous efforcer. Peut-être qu’un jour nous pourrons devenir parfaits."
+ ap_perfect_creatures_effect:0 "Trait "Créatures parfaites" sera ajouté à tous les citoyens de votre Empire après avoir terminé le projet spécial. Cela rendra vos dirigeants immortels."
+
+ pg.9.name:0 "Le Gène de la Perfection"
+ pg.9.desc:0 "Il y avait des recherches dans ce domaine avant, mais ils étaient il ya longtemps. Nous étions primitifs et nous ne pouvions pas comprendre cela. Maintenant, nous avons toutes ces connaissances de la biologie et de la modification génétique. Par conséquent, il est temps de faire une autre tentative de recherche pour le gène de la perfection."
+ pg.9.a:0 "Allons-y!"
+
+ GENE_OF_PERFECTION:0 "Recherche du Gène de la Perfection"
+ GENE_OF_PERFECTION_DESC:0 "Nos scientifiques devraient mener des expériences afin de trouver le gène, qui fournira un avenir meilleur pour l’empire."
+
+ pg.8.name:0 "Compréhension de la perfection"
+ pg.8.desc:0 "Après de nombreuses années de recherche et d’expérimentation dans le domaine de la biologie et de la génétique, nos scientifiques ont enfin trouvé le gène, que nous recherchions. Le gène de la perfection. Ce gène améliore nos capacités de façon exponentielle. Cela signifie que nous sommes venus à la perfection de la chair au-dessus des machines. Pour nous, rien de plus n’est impossible." 
+ 
+
+ pg.10.name:0 "[From.GetSpeciesNamePlural] Devinent Créatures énergétiques"
+ pg.10.desc:0 "All [From.GetSpeciesNamePlural]  Tous [From.GetSpeciesNamePlural] ont subi un grand changement. Ils ont réussi à trouver un moyen de se débarrasser de leur corps physique et de devenir de l’énergie pure. \n\nIl s’agit d’un grand pas en avant vers un avenir meilleur pour eux, mais cela pourrait être une menace pour nous."
+
+ pg.11.name:0 "Les Mangeurs d’Âme sont devenus des Créatures Énergétiques"
+ pg.11.desc:0 "Tous les Mangeurs d’Âme de [From.GetSpeciesNamePlural]  ont subi un grand changement. Ils ont réussi à trouver un moyen de se débarrasser de leur corps physique et de devenir de l’énergie pure. \n\nC’est un grand pas en avant vers un avenir meilleur pour eux, mais maintenant ils deviennent encore une plus grande menace pour nous et pour toute la galaxie."
+ PG_TERRIBLE:0 "Incroyable mais effrayant"
+
+
+
+ origin_pg_moon_start:0 "Colonie solitaire"
+ origin_pg_moon_start_desc:0 "À l’aube de l’ère spatiale, nous avons découvert qu’il y a une autre planète appropriée dans notre système solaire. Nous avons pu lancer rapidement le premier navire colonial. La colonie a prospéré, mais un jour notre planète natale s’est tue. Toutes les comunifications n’étaient plus là, ni l’aide pour la colonie nouvellement créée. La colonie était située sur une assez bonne planète, donc après cent ans, nous revenons dans l’espace à nouveau..."
+ origin_pg_moon_start_effects:0 "Vous commencez sur une colonie dans votre système d’origine, mais sans accès à votre ancienne planète capitale."
+
+ pg_old_home:0 "Perte du monde d’origine"
+ pg_old_home_desc:0 "Nous savons ce qui est arrivé à notre maison. Nous allons essayer d’éviter que l’histoire ne se répète."
+ pg_old_world_site:0 "Perte du monde d’origine"
+ pg_old_world_site_desc:0 "La planète a l’air très déplorable. Ici, tout est détruit, mais aucune trace de rayonnement qui balaie la théorie la plus évidente - une guerre nucléaire. Il est nécessaire de mener une enquête plus approfondie."
+
+ pgarc.1.name:0 "Planète morte"
+ pgarc.1.desc:0 "Toute la surface de la planète est couverte d’énormes fissures et de bâtiments effondrés. Mais certains bâtiments peuvent être vus à la surface. Ils se ressemblent presque, mais sont situés dans différentes parties de la planète. Peut-être devrions-nous explorer l’un d’eux."
+ pgarc.1.a:0 "Qu’est-ce qui s’est passé ici ?"
+ 
+ pgarc.2.name:0 "Entrée dans le bâtiment..."
+ pgarc.2.desc:0 "Une fois que les scientifiques sont entrés dans le bâtiment, ils ont vu de nombreux corps éparpillés sur le sol près de l’entrée. Les corps sont en très mauvais état. On dirait qu’ils ont été tués par la force. Là, nous avons trouvé des informations sur les plaques tectoniques, la surveillance de leurs mouvements, ainsi que des parties des plans de dispositifs inconnus pour nous. Les plans sont très loin d’être terminés et il n’est pas clair quel type d’appareil doit être assemblé selon eux."
+
+ pgarc.3.name:0 "Systèmes de sécurité"
+ pgarc.3.desc:0 "Lorsque les scientifiques vont à l’étage suivant, les systèmes de sécurité ont commencé à fonctionner. Les archéologues ont trouvé cela surprenant, car il ne semblait pas qu’il y avait de l’électricité. Les scientifiques ont réussi à éviter les décès et désactiver les systèmes de sécurité."
+
+ pgarc.4.name:0 "Vérité effrayante"
+ pgarc.4.desc:0 "Ayant finalement atteint la pièce principale de ce bâtiment, les scientifiques ont découvert un autre terminal. Il avait encore le controle sur les systèmes de sécurité à ce niveau que les scientifiques avaient récemment désactivé. Dans le terminal, les scientifiques ont trouvé des informations qui sont encore inconnues de notre science et peuvent aider le progrès technologique. En plus des données techniques, il y avait des journaux système, ainsi que des journaux des employés. Cette information était horrible... \nCe bâtiment, comme d’autres bâtiments similaires, a été construit par le gouvernement du pays, qui a acheté des plans et de l’équipement de l’une des multinationales. L’équipement acheté à la société était une arme sismique. \nLe terminal a indiqué que les armes avaient été testées sur l’un des plus petits pays du monde environ un an avant la destruction de la planète. Même lors des premiers essais, la situation sur la planète était tendue. \nOn ne sait pas qui avait frappé en premier, mais une dizaine de répliques qui se sont produites à travers la planète en même temps, n’a laissé personne vivant à la surface. \nÀ l’intérieur du complexe, les gens sont restés en vie, bien qu’infirmes. Malgré cela, ils ont été détruits par le système de sécurité du bâtiment, qui a échoué en raison de répliques. \n\nC’est ainsi que l’histoire des habitants de la planète s’est terminée."
+
+ pgarc.terrible:0 "Nous ne devons pas répéter leurs erreurs"
+
+ START_SCREEN_PART_TWO_PG_MOON:0 "Depuis des temps immémoriaux, notre civilizition peu développée s’est développée. \n\nAu début de l’ère spatiale, nous avions trouvé une planète habitable dans notre système solaire. Les principaux pays de la planète s’étaient réunis pour construire un vaisseau spatial qui peut emmener les colons à leur nouvelle maison.\nTout allait bien, la colonie se développait. Mais une fois que toutes les communications avec le monde d’origine des colons ont été perdues. La planète n’a répondu à aucune fréquence. L’aide n’est pas non plus venue.\nLes premières décennies sans l’aide de leur patrie sont devenues particulièrement difficiles, mais après cent ans après la perte de communication, les colons ont pu construire l’infrastructure nécessaire, et aller enfin dans l’espace et même avoir la possibilité de visiter le système voisin, de savoir ce qui est arrivé à leur monde d’origine..."
+
+ trait_brainwashed_psi:0 "Inconsciemment asservi"
+ trait_brainwashed_psi_desc:0 "Cette espèce a été modifiée de façon psionique en se contentant et très réceptive aux idéaux de leur superieur. Cela conduit à l’obéissance totale, mais l’absence de pensée rationnelle indépendante sape tout effort scientifique."
+
+ trait_brainwashed_se:0 "Esprit obscurci"
+ trait_brainwashed_se_desc:0 "L’esprit de cette espèce a été assombri par les Mangeurs d’Âme. Pour cette raison, ils sont maintenus dans une humilité parfaite et peuvent se reproduire même dans les empires des Mangeurs d’Âme, mais le manque de pensée rationnelle indépendante ne leur permet pas de s’engager dans des activités scientifiques."
+
+ tech_brainwash_soul_eater:0 "Contrôle des autres"
+ tech_brainwash_soul_eater_desc:0 "Après être devenus de l’énergie, les Mangeurs d’Âme peuvent apprendre à brouiller la conscience des extraterrestres et les faire se reproduire même lorsque leurs âmes sont consommées."
+
+ trait_pg_soul_eaten:0 "Malaise de l’Âme"
+ trait_pg_soul_eaten_desc:0 "Cette espèce ressent constamment une étrange faiblesse. Ils font des cauchemars la nuit et le matin certains d’entre eux ne se réveillent pas..."
+
+ pg_last_hope:0 "Survivants"
+ decision_last_hope:0 "Évacuation"
+ decision_last_hope_desc:0 "Pour survivre, nous devrons quitter la planète. Pour ce faire, nous construisons une arche et allons aux étoiles pour chercher une nouvelle maison."
+
+ pg_the_ark:0 "L’Arche"
+ pg_the_new_hope:0 "Nouvel espoir"
+ pg_the_new_hope_desc:0 "Enfin, nous avons trouvé un nouveau monde qui est devenu notre maison. Les habitants sont remplis de joie et d’espoir pour un nouvel avenir radieux."
+
+ tech_pg_the_ark:0 "Le projet Arche"
+ tech_pg_the_ark_desc:0 "Au cas où nous subirions une mort imminente, nous devons quitter nos mondes pour trouver un nouveau foyer. L’Arche deviendra notre salut. Grâce à elle, notre course pourra survivre."
+
+ requires_technology_tech_mine_zro:0 "Nécessite la technologie Distillation de Zro"

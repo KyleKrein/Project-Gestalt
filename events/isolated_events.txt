@@ -5,9 +5,9 @@ country_event = {
     hide_window = yes
 	is_triggered_only = yes
 	fire_only_once = yes
-    trigger = {
-		has_valid_civic = civic_isolated
-		exists = capital_scope
+	
+	trigger = {
+		has_origin = origin_isolated
 	}
 
 	immediate = {
@@ -26,18 +26,26 @@ country_event = {
 		}
 
 		set_spawn_system_batch = end
+		capital_scope = {
+			remove_all_buildings = yes
+			change_pc = pc_nuked
+			reroll_planet = yes
+		}
 		event_target:isolated_planet = {
 			set_owner = root
-			change_pc_to_normal = yes
+			pg_change_pc_to_normal = yes
 			generate_start_buildings_and_districts = yes
 			add_district = district_city
 			add_building = building_hydroponics_farm
 			root = {
+				set_country_flag = custom_start_screen
 				every_owned_pop = {
 					resettle_pop = {
 						pop = this
 						planet = prevprev
 					}
+					unemploy_pop = yes
+					clear_pop_category = yes
 				}
 				every_owned_fleet = {
 					if = {
@@ -54,13 +62,10 @@ country_event = {
 						set_location = prevprev.system_star
 					}
 				}
-				capital_scope = {
-					destroy_buildings_and_colony = yes
-				}
 			}
 			set_capital = yes
-			create_starbase_starport_from_planet = yes
-			starbase_add_shipyard_0 = yes
+			pg_create_starbase_starport_from_planet = yes
+			pg_starbase_add_shipyard_0 = yes
 		}
 	}
 }
@@ -70,10 +75,11 @@ country_event = {
 	hide_window = yes
 	is_triggered_only = yes
 	fire_only_once = yes
+	
 	trigger = {
-		has_valid_civic = civic_cluster
-		exists = capital_scope
+		has_origin = origin_cluster
 	}
+
 	immediate = {
 		set_spawn_system_batch = begin
 		no_scope = {
@@ -272,7 +278,7 @@ country_event = {
 
 		event_target:cluster_home_planet  = {
 			set_owner = root
-			change_pc_to_normal = yes
+			pg_change_pc_to_normal = yes
 			generate_start_buildings_and_districts = yes
 			add_district = district_city
 			root = {
@@ -281,6 +287,8 @@ country_event = {
 						pop = this
 						planet = prevprev
 					}
+					unemploy_pop = yes
+					clear_pop_category = yes
 				}
 				every_owned_fleet = {
 					if = {
@@ -297,13 +305,10 @@ country_event = {
 						set_location = prevprev.system_star
 					}
 				}
-				capital_scope = {
-					destroy_buildings_and_colony = yes
-				}
 			}
 			set_capital = yes
-			create_starbase_starport_from_planet = yes
-			starbase_add_shipyard_0 = yes
+			pg_create_starbase_starport_from_planet = yes
+			pg_starbase_add_shipyard_0 = yes
 		}
 	}
 }

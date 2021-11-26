@@ -1,17 +1,6 @@
 namespace = vb_psi_vortex
 
-@staring_food = 700
-@starving = 150
-@hungry = 300
-@peckish = 450
-@fed = 600
-@well_fed = 750
-@full = 900
-@engorged = 1050
-@max = 1200
-@food_factor = 10
 
-@price = -300
 
 #Creation of the country
 event = {
@@ -63,7 +52,7 @@ country_event = {
 			# save_event_target_as = vortex
 		# }
 		every_country = {
-			limit = { has_civic = civic_vb_psi_soul_eater }
+			limit = { has_origin = origin_vb_psi_soul_eater }
 			establish_communications_no_message = event_target:vortex
 		}
 	}
@@ -102,7 +91,7 @@ country_event = {
 					is_capital = no
 					count_pops = {
 						limit = { has_trait = trait_vb_psi_soul_eater }
-						count > 4
+						count > 20
 					}
 				}
 				every_planet = {
@@ -152,7 +141,7 @@ country_event = {
 					is_capital = no
 					count_pops = {
 						limit = { has_trait = trait_vb_psi_soul_eater }
-						count > 4
+						count > 20
 					}
 				}
 			}
@@ -246,7 +235,7 @@ country_event = {
 					}
 					count_pops = {
 						limit = { has_trait = trait_vb_psi_soul_eater }
-						count > 4
+						count > 20
 					}
 				}
 			}
@@ -283,6 +272,10 @@ country_event = {
 				# destroy_colony = yes
 				change_pc = pc_ringworld_habitable_damaged
 			}
+		}
+		change_variable = {
+			which = vb_psi_food
+			value = @price1
 		}
 	}
 	

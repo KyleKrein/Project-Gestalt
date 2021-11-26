@@ -13,13 +13,6 @@ special_project = {
 	}
 	
 	on_success = {
-	        every_country = {
-				limit = { 
-					is_ai = no
-					has_communications = root
-					NOT = { is_same_value = root }
-				}
-			}
 		owner = {
 			country_event = { id = pg.2 }
 		}
@@ -31,3 +24,62 @@ special_project = {
 	on_start = {
 	}
 }
+
+#Gene of Perfection
+special_project = {
+	key = "GENE_OF_PERFECTION"
+	cost = 30000
+	tech_department = society_technology
+	picture = GFX_evt_genetic_modification
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	
+	event_scope = planet_event
+	
+	requirements = {
+	}
+	
+	on_success = {
+	        every_country = {
+				limit = { 
+					is_ai = no
+					has_communications = root
+					NOT = { is_same_value = root }
+				}
+			}
+		owner = {
+			country_event = { id = pg.8 }
+		}
+	}
+	
+	on_fail = {
+	}
+	
+	on_start = {
+	}
+}
+
+#Colonizing old world with origin about starting on another planet in system
+#special_project = {
+#	key = "PG_OLD_WORLD"
+#	cost = 5000
+#	tech_department = society_technology
+#	picture = GFX_evt_city_ruins
+#	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+	
+#	event_scope = planet_event
+	
+#	requirements = {
+#	}
+	
+#	on_success = {
+#		owner = {
+#			country_event = { id = pg.16 }
+#		}
+#	}
+	
+#	on_fail = {
+#	}
+	
+#	on_start = {
+#	}
+#}

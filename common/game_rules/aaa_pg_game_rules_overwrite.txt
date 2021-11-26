@@ -1,0 +1,15 @@
+can_colonize_outside_borders = {
+	exists = root
+	root = {
+		OR = {
+			is_country_type = hfe_features_exodus #made this to make the mod compatible woth your's, had :D  You are a 1000000% better modmaker than me :(  But when I look at your code, I start to understand how do all of this work. Thank you :3
+			is_country_type = pg_last_hope
+		}
+	}
+	exists = solar_system
+	solar_system = {
+		not = {
+			exists = owner
+		}
+	}
+}
