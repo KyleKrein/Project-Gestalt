@@ -18,7 +18,7 @@ bleak_vortex = {
 	modules = {
 		basic_technology_module = {}
 		exclusive_diplomacy_module = {
-			contact_rule = script
+			contact_rule = on_action_only
 		}
 	}
 }

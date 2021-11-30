@@ -66,7 +66,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	diplomatic = yes
-	force_open = yes
+#	force_open = yes
 	
 	picture_event_data = {
 		portrait = shroud1
@@ -89,15 +89,15 @@ country_event = {
 			random_owned_planet = {
 				limit = {
 					is_capital = no
-					count_pops = {
+					num_pops = {
 						limit = { has_trait = trait_vb_psi_soul_eater }
 						count > 20
 					}
 				}
-				every_planet = {
-					limit = { has_planet_flag = vb_psi_desired_by_vortex@root }
-					remove_planet_flag = vb_psi_desired_by_vortex@root
-				}
+#				every_planet = {
+#					limit = { has_planet_flag = vb_psi_desired_by_vortex@root }
+#					remove_planet_flag = vb_psi_desired_by_vortex@root
+#				}
 				set_timed_planet_flag = { flag = vb_psi_desired_by_vortex@root days = 360 }
 			}
 		}
@@ -139,7 +139,7 @@ country_event = {
 				exists = event_target:desired_planet
 				event_target:desired_planet = {
 					is_capital = no
-					count_pops = {
+					num_pops = {
 						limit = { has_trait = trait_vb_psi_soul_eater }
 						count > 20
 					}
@@ -198,7 +198,7 @@ country_event = {
 	
 	is_triggered_only = yes
 	diplomatic = yes
-	force_open = yes
+#	force_open = yes
 	
 	location = event_target:desired_planet
 	
@@ -233,7 +233,7 @@ country_event = {
 					owner = {
 						is_same_value = root
 					}
-					count_pops = {
+					num_pops = {
 						limit = { has_trait = trait_vb_psi_soul_eater }
 						count > 20
 					}
