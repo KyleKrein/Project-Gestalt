@@ -1,12 +1,11 @@
+version="3.2.x"
 tags={
-	"Technologies"
+	"Leaders"
 	"Gameplay"
-	"Events"
 	"Species"
+	"Technologies"
+	"Events"
 	"Project Gestalt"
 }
-name="Project Gestalt [2.7.x]"
-picture="thumbnail.png"
-supported_version="2.7.*"
-path="D:/pg"
-remote_file_id="2107441826"
+name="Project Gestalt [3.2.x]"
+supported_version="3.2.2"

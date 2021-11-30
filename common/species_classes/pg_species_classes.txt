@@ -3,7 +3,8 @@ GESTALT = {
 
 	playable = { has_global_flag = game_started }
 	randomized = no
-	robotic = no
+	
+#	robotic = no
 	
 	gender = no
 
@@ -25,7 +26,7 @@ GESTALTSE = {
 
 	playable = { has_global_flag = game_started }
 	randomized = no
-	robotic = no
+#	robotic = no
 	
 	gender = no
 

@@ -127,7 +127,7 @@ country_event = {
 				limit = { leader_class = admiral }
 				remove_ruler_trait = leader_trait_admiral_psionic
 				if = {
-					limit = { leader = { NOT = { has_trait = leader_trait_admiral_chosen } } }
+					limit = { this = { NOT = { has_trait = leader_trait_admiral_chosen } } }
 					add_trait = leader_trait_admiral_psionic
 				}
 				add_trait = leader_trait_admiral_psionic
@@ -137,7 +137,7 @@ country_event = {
 				limit = { leader_class = general }
 				remove_ruler_trait = leader_trait_general_psionic
 				if = {
-					limit = { leader = { NOT = { has_trait = leader_trait_general_chosen } } }
+					limit = { this = { NOT = { has_trait = leader_trait_general_chosen } } }
 					add_trait = leader_trait_general_psionic
 				}
 				add_ruler_trait = leader_trait_ruler_gestalt
@@ -146,7 +146,7 @@ country_event = {
 				limit = { leader_class = governor }
 				remove_ruler_trait = leader_trait_governor_psionic
 				if = {
-					limit = { leader = { NOT = { has_trait = leader_trait_governor_chosen } } }
+					limit = { this = { NOT = { has_trait = leader_trait_governor_chosen } } }
 					add_trait = leader_trait_governor_psionic
 				}
 				add_ruler_trait = leader_trait_ruler_gestalt
@@ -155,7 +155,7 @@ country_event = {
 				limit = { leader_class = scientist }
 				remove_ruler_trait = leader_trait_scientist_psionic
 				if = {
-					limit = { leader = { NOT = { has_trait = leader_trait_scientist_chosen } } }
+					limit = { this = { NOT = { has_trait = leader_trait_scientist_chosen } } }
 					add_trait = leader_trait_scientist_psionic
 				}
 				add_ruler_trait = leader_trait_ruler_gestalt

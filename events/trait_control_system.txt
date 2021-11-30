@@ -138,9 +138,7 @@ country_event = {
 	}
 	immediate = {
 		if = {
-			limit = {
-				has_technology = { tech_brainwash_soul_eater }
-			}
+			limit = {has_technology = tech_brainwash_soul_eater}
 			every_owned_pop = {
 				limit = {
 					has_trait = trait_brainwashed_psi
