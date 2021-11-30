@@ -66,6 +66,7 @@ country_event = {
 	id = vb_psi_vortex.3
 	title = VB_PSI_BLEAK_VORTEX_TITLE
 	desc = vb_psi_vortex.3.desc
+	diplomatic_title = BLANK_STRING
 	
 	is_triggered_only = yes
 	diplomatic = yes
@@ -84,31 +85,31 @@ country_event = {
 	
 	immediate = {
 		set_country_flag = vb_psi_vortex_diplo
-		IF = {
-			limit = {
-				NOT = {
-					any_owned_planet = { has_planet_flag = vb_psi_desired_by_vortex@root }
-				}
-			}
-#			every_owned_planet = {
-#				limit = { has_planet_flag = vb_psi_desired_by_vortex@root }
-#				remove_planet_flag = vb_psi_desired_by_vortex@root
+#		IF = {
+#			limit = {
+#				NOT = {
+#					any_owned_planet = { has_planet_flag = vb_psi_desired_by_vortex@root }
+#				}
 #			}
-			random_owned_planet = {
-				limit = {
-					is_capital = no
-					num_pops = {
-						limit = { has_trait = trait_vb_psi_soul_eater }
-						count > 20
-					}
-				}
-				set_timed_planet_flag = { flag = vb_psi_desired_by_vortex@root days = 360 }
-			}
-		}
-		random_owned_planet = {
-			limit = { has_planet_flag = vb_psi_desired_by_vortex@root }
-			save_event_target_as = desired_planet
-		}
+##			every_owned_planet = {
+##				limit = { has_planet_flag = vb_psi_desired_by_vortex@root }
+##				remove_planet_flag = vb_psi_desired_by_vortex@root
+##			}
+# 		random_owned_planet = {
+#				limit = {
+#					is_capital = no
+#					num_pops = {
+#						limit = { has_trait = trait_vb_psi_soul_eater }
+#						count > 20
+#					}
+#				}
+#				set_timed_planet_flag = { flag = vb_psi_desired_by_vortex@root days = 360 }
+#			}
+#		}
+###		random_owned_planet = {
+###			limit = { has_planet_flag = vb_psi_desired_by_vortex@root }
+###			save_event_target_as = pg_desired_planet
+###		}
 	}
 	
 	after = {
@@ -144,8 +145,8 @@ country_event = {
 			}
 			custom_tooltip = {
 				fail_text = vb_psi_vortex.no_valid_planet
-				exists = event_target:desired_planet
-				event_target:desired_planet = {
+				exists = event_target:pg_desired_planet
+				event_target:pg_desired_planet = {
 					is_capital = no
 					num_pops = {
 						limit = { has_trait = trait_vb_psi_soul_eater }
@@ -154,9 +155,9 @@ country_event = {
 				}
 			}
 		}
-		hidden_effect = {
-			country_event = { id = vb_psi_vortex.4 }
-		}
+###		hidden_effect = {
+###			country_event = { id = vb_psi_vortex.4 }
+###		}
 		
 	}
 	
@@ -203,13 +204,14 @@ country_event = {
 	id = vb_psi_vortex.4
 	title = VB_PSI_BLEAK_VORTEX_TITLE
 	desc = vb_psi_vortex.4.desc
+	diplomatic_title = BLANK_STRING
 	
 	is_triggered_only = yes
 	
 	diplomatic = yes
-#	force_open = yes
+	force_open = yes
 	
-	location = event_target:desired_planet
+	location = event_target:pg_desired_planet
 	
 	picture_event_data = {
 		portrait = shroud1
@@ -238,8 +240,8 @@ country_event = {
 		allow = {
 			custom_tooltip = {
 				fail_text = vb_psi_vortex.no_longer_valid
-				exists = event_target:desired_planet
-				event_target:desired_planet = {
+				exists = event_target:pg_desired_planet
+				event_target:pg_desired_planet = {
 					is_capital = no
 					owner = {
 						is_same_value = root
@@ -258,7 +260,7 @@ country_event = {
 			}
 		}
 		
-		event_target:desired_planet = {
+		event_target:pg_desired_planet = {
 			IF = {
 				limit = {
 					NOR = {
