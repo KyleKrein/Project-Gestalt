@@ -169,3 +169,45 @@ pg_change_pc_to_almost_normal = {
 		}
 	}
 }
+
+create_and_share_l_gate = {
+	set_star_flag = lgate
+	spawn_megastructure = {
+		type = lgate_base
+		orbit_angle = 225
+		orbit_distance = 30
+	}
+	every_system_planet = {
+		limit = {
+			is_star = yes
+		}
+		# everyone else needs to know the location of the Lgate
+		every_country = {
+			prev = {
+				set_surveyed = {
+					surveyed = yes
+					surveyor = ROOT
+				}
+				set_all_comms_surveyed = yes
+			}
+		}
+	}
+}
+
+create_and_link_wormholes = {
+	event_target:pg_cluster_05 = {
+		spawn_natural_wormhole = {
+			bypass_type = wormhole
+			random_pos = yes
+			orbit_angle = 360
+		}
+	}
+	event_target:suitable_wormhole = {
+		spawn_natural_wormhole = {
+			bypass_type = wormhole
+			random_pos = yes
+			orbit_angle = 360
+		}
+		link_wormholes = event_target:pg_cluster_05
+	}
+}

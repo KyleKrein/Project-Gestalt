@@ -99,7 +99,7 @@ init_isolated = {
 		orbit_distance = 20
 		class = pc_gaia
 		orbit_angle = { min = 90 max = 270 }
-		size = { min = 16 max = 20 }
+		size = { min = 18 max = 24 }
 		deposit_blockers = none
 		modifiers = none
 		init_effect = {
@@ -159,86 +159,3 @@ init_isolated = {
 #		}
 	}
 }
-
-init_isolated.1 = {
-	name = "Allien's Home"
-	class = sc_g
-	usage = misc_system_init
-	usage_odds = 0
-	flags = { isolated_system.1 }
-  
-	planet = {
-	  name = "Atlantis"
-	  class = "pc_g_star"
-		  orbit_distance = 0
-		  orbit_angle = 1
-		  size = 30
-		  has_ring = no
-		  planet = {
-			name = "Last Hope"
-			orbit_angle = { min = 90 max = 270 }
-			class = pc_shielded
-			orbit_distance = 45
-			satellite_naming_policy = lower_case_latin_letters
-		}
-	}
-	change_orbit = 45
-
-	init_effect = {
-		  spawn_megastructure = {
-			  type = "ring_world_ruined"
-			  orbit_angle = 0
-			  orbit_distance = 45
-#			  location = planet
-		  }
-		  spawn_megastructure = {
-			  type = "ring_world_ruined"
-			  orbit_angle = 90
-			  orbit_distance = 45
-#			  location = planet
-		  }
-		  spawn_megastructure = {
-			  type = "ring_world_ruined"
-			  orbit_angle = 180
-			  orbit_distance = 45
-#			  location = planet
-		  }
-		  spawn_megastructure = {
-			  type = "ring_world_ruined"
-			  orbit_angle = 270
-			  orbit_distance = 45
-#			  location = planet
-		  }
-	  spawn_megastructure = {
-			  type = "gateway_ruined"
-			  random_pos = yes
-			  orbit_angle = 360		# range of the randomization
-		  }
-		  while = {
-			  count = 3
-			  create_ambient_object = {
-				  type = "large_debris_object"
-				  location = solar_system
-			  }
-		  }
-		  while = {
-			  count = 2
-			  create_ambient_object = {
-				  type = "medium_debris_01_object"
-				  location = solar_system
-			  }
-		  }
-		  while = {
-			  count = 2
-			  create_ambient_object = {
-				  type = "medium_debris_02_object"
-				  location = solar_system
-			  }
-		  }
-		  create_ambient_object = {
-			  type = "small_debris_object"
-			  location = solar_system
-		  }
-  
-	  }
-  }

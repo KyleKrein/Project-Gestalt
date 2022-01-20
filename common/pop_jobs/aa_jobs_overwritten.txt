@@ -8,10 +8,17 @@ telepath = {
 		has_owner = yes
 		is_being_purged = no
 		is_being_assimilated = no
+		is_sapient = yes
 	}
 
+	possible_precalc = can_fill_specialist_job
 	possible = {
-		specialist_job_check_trigger = yes
+		OR = {
+			has_trait = trait_latent_psionic
+			has_trait = trait_psionic
+			has_trait = trait_gestalt
+			has_trait = trait_vb_psi_soul_eater
+		}
 	}
 
 	resources = {
@@ -23,6 +30,13 @@ telepath = {
 			trigger = {
 				exists = owner
 				owner = { has_valid_civic = civic_police_state }
+			}
+			unity = 1
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_active_tradition = tr_domination_judgment_corps }
 			}
 			unity = 1
 		}
@@ -44,16 +58,6 @@ telepath = {
 
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = { has_active_tradition = tr_domination_judgment_corps }
-		}
-		modifier = {
-			planet_crime_add = -5
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
 			exists = planet
 			planet = { has_modifier = anticrime_campaign }
 		}
@@ -62,13 +66,24 @@ telepath = {
 		}
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_edict = thought_enforcement }
+		}
+		modifier = {
+			planet_crime_add = -5
+		}
+	}
+
 	weight = {
-		weight = 10
+		weight = @specialist_job_weight
 		modifier = {
 			factor = 0
 			NOR = {
 				has_trait = trait_latent_psionic
 				has_trait = trait_psionic
+				has_trait = trait_vb_psi_soul_eater
 				has_trait = trait_gestalt
 			}
 		}
@@ -85,6 +100,7 @@ telepath = {
 			OR = {
 				has_trait = trait_latent_psionic
 				has_trait = trait_psionic
+				has_trait = trait_vb_psi_soul_eater
 				has_trait = trait_gestalt
 			}
 		}
@@ -126,6 +142,22 @@ telepath = {
 			factor = 0.1
 			is_enslaved = yes
 			has_slavery_type = { type = slavery_indentured }
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_void_dweller_1
+			exists = planet
+			planet = { is_planet_class = pc_habitat }
+		}
+		modifier = {
+			factor = 0.85
+			has_trait = trait_void_dweller_1
+			exists = planet
+			planet = { is_artificial = no }
+		}
+		modifier = {
+			factor = 1.5
+			has_trait = trait_necrophage
 		}
 	}
 }
