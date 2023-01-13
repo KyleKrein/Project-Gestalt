@@ -1,0 +1,42 @@
+#Old World
+pg_old_world_site = {
+	desc = pg_old_world_site_desc
+	picture = GFX_evt_relic_world
+	stages = 4
+	allow = {
+		is_ship_class = shipclass_science_ship
+		exists = leader
+	}
+	visible = {
+		default_site_visible_trigger = yes
+	}
+	on_visible = {
+	}	
+	
+	stage = {
+		difficulty = 2
+		icon = GFX_archaeology_runes_D1
+		event = pgarc.1
+	}
+	stage = {
+		difficulty = 3
+		icon = GFX_archaeology_runes_D2
+		event = pgarc.2
+	}
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_D3
+		event = pgarc.3
+	}
+	stage = {
+		difficulty = 4
+		icon = GFX_archaeology_runes_D4
+		event = pgarc.4
+	}
+
+	on_roll_failed = {
+		from = {
+			standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+		}
+	}
+}

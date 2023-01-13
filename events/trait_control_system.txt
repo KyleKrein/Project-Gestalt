@@ -1,0 +1,165 @@
+namespace = pg
+
+#Delete soul eaten trait if brainwashed by soul eaters
+country_event = {
+	id = pg.100
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_origin = origin_vb_psi_soul_eater
+		any_owned_pop = {
+			has_trait = trait_brainwashed_se
+		}
+	}
+	immediate = {
+		
+		every_owned_pop = {
+			limit = {
+				AND = {
+					has_trait = trait_brainwashed_se
+					has_trait = trait_pg_soul_eaten
+				}
+			}
+			modify_species = { 
+				species = this
+				remove_trait = trait_pg_soul_eaten
+			 }
+		}
+		every_owned_species = {
+			limit = {
+				has_trait = trait_brainwashed_se
+			}
+			set_population_controls = {
+				type = no
+				cooldown = no
+				country = prev
+			}
+		}
+	}
+}
+
+#Add Soul eaten trait to pops in soul eater empires
+country_event = {
+	id = pg.101
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		has_origin = origin_vb_psi_soul_eater
+		any_owned_pop = {
+			NOR = { 
+				has_trait = trait_brainwashed_se 
+				has_trait = trait_vb_psi_soul_eater
+				has_trait = trait_mechanical
+				has_trait = trait_machine_unit
+			}
+		}
+	}
+	immediate = {
+		
+		every_owned_pop = {
+			limit = {
+				NOR = {
+					has_trait = trait_brainwashed_se
+					has_trait = trait_vb_psi_soul_eater
+					has_trait = trait_pg_soul_eaten
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+				}
+			}
+			modify_species = {
+				species = this
+				add_trait = trait_pg_soul_eaten
+			}
+		}
+		every_owned_species = {
+			limit = {
+				NOR = { 
+					has_trait = trait_brainwashed_se
+					has_trait = trait_vb_psi_soul_eater
+					has_trait = trait_mechanical
+					has_trait = trait_machine_unit
+				}
+			}
+			set_population_controls = {
+				type = yes
+				cooldown = no
+				country = prev
+			}
+		}
+	}
+}
+
+#Remove special traits of soul eater empires if pops are not in soul eater empires anymore
+country_event = {
+	id = pg.102
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_origin = origin_vb_psi_soul_eater }
+		any_owned_pop = {
+			OR = {
+				has_trait = trait_brainwashed_se
+				has_trait = trait_pg_soul_eaten
+			}
+		}
+	}
+	immediate = {
+		every_owned_pop = {
+			limit = {
+				has_trait = trait_brainwashed_se
+			}
+			modify_species = {
+				species = this
+				remove_trait = trait_brainwashed_se
+			}
+		}
+		every_owned_pop = {
+			limit = {
+					has_trait = trait_pg_soul_eaten
+			}
+			modify_species = { 
+				species = this
+				remove_trait = trait_pg_soul_eaten
+			 }
+		}
+	}
+}
+
+#Remove brainwashed trait if an empire doesn't have psionics (psionic theory tech)
+country_event = {
+	id = pg.103
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_technology = tech_psionic_theory }
+		any_owned_pop = {
+			has_trait = trait_brainwashed_psi
+		}
+	}
+	immediate = {
+		if = {
+			limit = {has_technology = tech_brainwash_soul_eater}
+			every_owned_pop = {
+				limit = {
+					has_trait = trait_brainwashed_psi
+				}
+				modify_species = {
+					species = this
+					remove_trait = trait_brainwashed_psi
+					add_trait = trait_brainwashed_se
+				}
+			}
+		}
+		else = {
+			every_owned_pop = {
+				limit = {
+					has_trait = trait_brainwashed_psi
+				}
+				modify_species = {
+					species = this
+					remove_trait = trait_brainwashed_psi
+				}
+			}
+		}
+	}
+}

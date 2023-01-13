@@ -7,7 +7,7 @@ gestalt_army = {
 	collateral_damage = 0.5
 	war_exhaustion = 2.0
 	time = 180
-	icon_frame = 9
+#	icon_frame = 9
 	
 	resources = {
 		category = armies

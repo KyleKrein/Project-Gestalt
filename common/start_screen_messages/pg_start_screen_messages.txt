@@ -16,11 +16,22 @@ part = {
 
 #Isolated
 part = {
-	location = 2
-	localization = START_SCREEN_PART_TWO_ISOLATED
+	location = 1
+	localization = "START_SCREEN_PART_TWO_ISOLATED"
 	
 	trigger = {
-		has_civic = civic_isolated
-		NOT = { has_country_flag = custom_start_screen }
+		has_origin = origin_isolated
+#		NOT = { has_country_flag = custom_start_screen }
+	}
+}
+
+#Start on a colony
+part = {
+	location = 1
+	localization = "START_SCREEN_PART_TWO_PG_MOON"
+
+	trigger = {
+		has_origin = origin_pg_moon_start
+#		NOT = { has_country_flag = custom_start_screen }
 	}
 }

@@ -1,0 +1,35 @@
+cb_soul_eater_hunger = {
+	show_in_diplomacy = yes
+	show_notification = yes
+	potential = {
+		from = { has_origin = origin_vb_psi_soul_eater }
+	}
+	is_valid = {
+		#has_total_war_cb = no
+		#NOT = { is_overlord_to = FROM }
+		#OR = {
+		#	is_subject = no
+		#	overlord = { NOT = { is_same_value = from } }
+		#}
+		#check_variable = { which = vb_psi_food value < 4010 }
+	}
+}
+
+cb_containment_soul_eater = {
+	show_in_diplomacy = yes
+	show_notification = yes
+	potential = {
+		is_country_type = default
+	}
+	is_valid = {
+		has_total_war_cb = yes
+		OR = {
+			is_subject = no
+			overlord = { NOT = { is_same_value = from } }
+		}
+		NOT = { is_overlord_to = FROM }
+		from = {
+			has_origin = origin_vb_psi_soul_eater
+		}
+	}
+}

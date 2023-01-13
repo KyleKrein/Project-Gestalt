@@ -1,0 +1,57 @@
+wg_soul_eater_hunger = {
+	casus_belli = cb_soul_eater_hunger
+
+	hide_if_no_cb = yes
+	total_war = yes
+	set_defender_wargoal = wg_end_threat_soul_eater
+
+	allowed_peace_offers = {
+		status_quo
+	}
+
+	surrender_acceptance = -1000
+
+	potential = {
+		from = { 
+#			AND = {
+#				 NOT = { is_country_type = fallen_empire } 
+	has_origin = origin_vb_psi_soul_eater } 
+#}
+
+	}
+	possible = {
+	#	check_variable = { which = vb_psi_food value < 4010 }
+		always = yes
+	}
+
+	ai_weight = {
+		weight = 100
+	}
+}
+
+wg_end_threat_soul_eater = {
+	casus_belli = cb_containment_soul_eater
+
+	hide_if_no_cb = yes
+	total_war = yes
+	set_defender_wargoal = wg_soul_eater_hunger
+
+	allowed_peace_offers = {
+		status_quo
+	}
+
+	surrender_acceptance = -1000
+
+	potential = {
+		from = {
+			has_origin = origin_vb_psi_soul_eater
+		}
+	}
+	possible = {
+		always = yes
+	}
+
+	ai_weight = {
+		weight = 50
+	}
+}

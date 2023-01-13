@@ -13,7 +13,7 @@ country_event = {
 	}
 	
 	trigger = {
-		has_civic = civic_vb_psi_touched_by_the_shroud
+		has_origin = origin_vb_psi_touched_by_the_shroud
 		NOT = { has_technology = tech_psionic_theory }
 		num_ascension_perks > 0
 	}

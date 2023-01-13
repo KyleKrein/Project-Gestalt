@@ -12,7 +12,7 @@ special_project = {
 	}
 	
 	on_success = {
-		owner = {
+		event_target:millionaire_empire = {
 			country_event = { id = millionaire.3 }
 		}
 	}
@@ -38,7 +38,7 @@ special_project = {
 	}
 	
 	on_success = {
-		owner = {
+		event_target:millionaire_empire = {
 			country_event = { id = millionaire.4 }
 		}
 	}

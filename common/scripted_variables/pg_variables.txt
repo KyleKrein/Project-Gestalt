@@ -1,0 +1,18 @@
+#Soul Eaters
+@staring_food = 950
+@starving = 100
+@hungry = 350
+@peckish = 600
+@fed = 850
+@well_fed = 1100
+@full = 1350
+@engorged = 1600
+@max = 1850
+@food_factor = 15
+
+@price = -600
+@price1 = 600
+
+#PG
+@energy_trait_points = 2
+@energy_max_traits = 5

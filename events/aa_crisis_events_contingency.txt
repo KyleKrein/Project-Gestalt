@@ -1,0 +1,39 @@
+namespace = crisis
+
+### Synth Terror Events
+
+# Pulse Event
+event = {
+	id = crisis.2080
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = synth_terror
+	}
+
+	immediate = {
+		every_country = {
+			limit = {
+				is_country_type = default
+				has_country_flag = synth_terror_country
+				NOT = { has_country_flag = synth_detector }
+				NOR = {
+					has_authority = auth_hive_mind
+					has_authority = auth_machine_intelligence
+					owner_species = { has_trait = trait_psionic }
+					owner_species = { has_trait = trait_gestalt }
+					owner_species = { has_trait = trait_corrupted }
+				}
+			}
+			random_list = {
+				30 = {
+					country_event = { id = crisis.2081 days = 1 random = 300 }
+				}
+				70 = {}
+			}
+		}
+	}
+}
+
