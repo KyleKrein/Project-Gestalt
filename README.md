@@ -5,6 +5,7 @@ Biological ascension will help you to find the Gene of Perfection to make your s
 Synthetic ascension will lead you to becoming an empire with less individuality, uniting the minds of all residents for more effective work.
 
 **Soul Eaters**
+
 Soul Eaters were added. They work simular to default empire, but they need souls of other species to feed. Hunger makes you fleets and armies stronger, but when you are fed, you have big bonuses to production and scientific research. They have an access the the Bleak Vortex - a part of the Shroud, where the Stranger lives...
 Soul Eaters don't have access to both Synthethic and Psionic paths, but they have a special way to become energy creatures. Also, they have an option to follow the biological path of ascension. 
 
